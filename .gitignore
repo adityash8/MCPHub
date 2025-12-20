@@ -29,6 +29,8 @@ build/
 *.egg-info/
 *.so
 *.dylib
+.next/
+out/
 
 # Logs
 *.log
@@ -39,3 +41,5 @@ logs/
 *.temp
 .cache/
 
+# Vercel
+.vercel
