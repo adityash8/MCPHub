@@ -15,6 +15,9 @@ export async function POST(request: NextRequest) {
     // For MVP, just log the email. In production, save to database or send to email service
     console.log('Email captured:', email)
 
+    // Note: Client-side tracking will fire sign_up_started event
+    // Server-side tracking can be added here if needed
+
     // Redirect to directory page
     return NextResponse.redirect(new URL('/directory', request.url))
   } catch (error) {

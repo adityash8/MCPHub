@@ -1,16 +1,14 @@
+'use client'
+
 import Link from 'next/link'
 import { Search, Zap, Shield, Download } from 'lucide-react'
-import SocialProofBanner from '@/components/SocialProofBanner'
-import PricingCards from '@/components/PricingCards'
+import { track } from '@/lib/analytics'
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
-      {/* Social Proof Banner - Sticky Top (Bandwagon + Mere Exposure) */}
-      <SocialProofBanner />
-
       {/* Header */}
-      <header className="border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
+      <header className="border-b border-gray-200 dark:border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
@@ -29,42 +27,39 @@ export default function Home() {
                 href="/directory"
                 className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
               >
-                Start Free (No Card Required)
+                Try Free
               </Link>
             </nav>
           </div>
         </div>
       </header>
 
-      {/* Hero Section - Anchoring + Loss Aversion */}
+      {/* Hero Section */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center max-w-4xl mx-auto">
           <h2 className="text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Add 8 MCPs to Cursor in 2 minutes
+            The MCP Marketplace
             <br />
-            <span className="text-blue-600">Stop wasting hours hunting GitHub for broken configs</span>
+            <span className="text-blue-600">+ Health Monitoring</span>
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-            Discover, configure, and monitor 50+ tested Model Context Protocol servers.
-            No more manual JSON editing or broken configs.
+          <p className="text-xl text-gray-600 dark:text-gray-300 mb-12 max-w-2xl mx-auto">
+            Discover, configure, and monitor Model Context Protocol servers in under 2 minutes.
+            Stop hunting GitHub repos and editing JSON files manually.
           </p>
-          <div className="flex gap-4 justify-center mb-16">
+          <div className="flex gap-4 justify-center">
             <Link
               href="/directory"
               className="px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-lg font-semibold"
             >
-              Browse 50+ Tested MCPs →
+              Browse MCPs
             </Link>
             <Link
               href="/directory"
               className="px-8 py-4 border-2 border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:border-gray-400 dark:hover:border-gray-600 transition-colors text-lg font-semibold"
             >
-              Start Free (No Card Required)
+              Try Free
             </Link>
           </div>
-
-          {/* Pricing Cards - Contrast Effect */}
-          <PricingCards />
         </div>
 
         {/* Features Grid */}
@@ -118,7 +113,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Email Capture Section - Foot-in-the-Door */}
+        {/* Email Capture Section */}
         <div className="mt-32 text-center">
           <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
             Ready to streamline your MCP workflow?
@@ -130,12 +125,21 @@ export default function Home() {
             action="/api/email-capture"
             method="post"
             className="max-w-md mx-auto mb-6"
+            onSubmit={(e) => {
+              const form = e.currentTarget
+              const emailInput = form.querySelector<HTMLInputElement>('input[type="email"]')
+              if (emailInput?.value) {
+                track('sign_up_started', {
+                  method: 'email_capture',
+                })
+              }
+            }}
           >
             <div className="flex gap-2">
               <input
                 type="email"
                 name="email"
-                placeholder="Get setup reminders"
+                placeholder="Enter your email"
                 required
                 className="flex-1 px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
@@ -143,12 +147,9 @@ export default function Home() {
                 type="submit"
                 className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold"
               >
-                Send Me the Guide
+                Get Started
               </button>
             </div>
-            <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
-              We'll send you installation steps in 5 minutes
-            </p>
           </form>
           <Link
             href="/directory"

@@ -1,7 +1,5 @@
 export type Platform = 'claude-desktop' | 'cursor' | 'continue' | 'cline'
 
-export type HealthStatus = 'healthy' | 'degraded' | 'down' | 'unknown'
-
 export interface MCP {
   id: string
   name: string
@@ -19,9 +17,6 @@ export interface MCP {
   reviewCount?: number
   upvotes?: number
   tags?: string[]
-  healthStatus?: HealthStatus
-  isFeatured?: boolean
-  trendingScore?: number
 }
 
 export type MCPCategory =
