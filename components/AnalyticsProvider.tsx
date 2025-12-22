@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, Suspense } from 'react'
 import { usePathname, useSearchParams } from 'next/navigation'
 import posthog from 'posthog-js'
 import { pageView } from '@/lib/analytics'
@@ -21,7 +21,6 @@ if (typeof window !== 'undefined') {
       autocapture: false, // Explicit tracking only
       session_recording: {
         maskAllInputs: true,
-        maskTextContent: false,
       },
       loaded: (posthog) => {
         if (process.env.NODE_ENV === 'development') {
@@ -57,7 +56,9 @@ export function AnalyticsProvider({
 }) {
   return (
     <>
-      <AnalyticsTracker />
+      <Suspense fallback={null}>
+        <AnalyticsTracker />
+      </Suspense>
       {children}
     </>
   )
