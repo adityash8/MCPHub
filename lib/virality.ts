@@ -75,12 +75,3 @@ function generateShareUrl(contentId: string, sharerId: string): string {
   return `${base}?ref=${sharerId}`
 }
 
-// Get referrer ID for signup attribution
-export function getReferrerId(): string | null {
-  try {
-    return localStorage.getItem('referrer_id')
-  } catch {
-    return null
-  }
-}
-
