@@ -1,0 +1,14 @@
+🎯 **What:**
+Added unit tests for the `getConfigFileName` function in `lib/config-generator.ts`. The function is critical for resolving the appropriate configuration file name for a specified MCP platform, but lacked test coverage.
+
+📊 **Coverage:**
+The test suite now covers all expected platform-to-filename mappings:
+- `claude-desktop` -> `claude_desktop_config.json`
+- `cursor` -> `cursor_mcp_config.json`
+- `continue` -> `continue_config.json`
+- `cline` -> `cline_config.json`
+It also covers the fallback scenario:
+- Unknown platform -> `mcp_config.json`
+
+✨ **Result:**
+The `getConfigFileName` mapping logic is fully verified, ensuring that adding or modifying platform configs won't unintentionally break config file name resolution, thereby increasing the reliability of the codebase.
