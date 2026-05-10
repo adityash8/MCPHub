@@ -106,24 +106,6 @@ export function track(eventName: string, params: TrackParams = {}) {
   }
 }
 
-// Identify user after auth
-export function identify(userId: string, traits: TrackParams = {}) {
-  if (typeof window === 'undefined') return
-
-  // PostHog identify
-  if (posthog.__loaded) {
-    posthog.identify(userId, traits)
-  }
-
-  // Push to dataLayer for GTM
-  window.dataLayer = window.dataLayer || []
-  window.dataLayer.push({
-    event: 'user_identified',
-    user_id: userId,
-    ...traits,
-  })
-}
-
 // Set user data for Enhanced Conversions
 export function setUserData(userData: UserData) {
   if (typeof window === 'undefined') return
