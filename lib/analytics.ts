@@ -28,8 +28,12 @@ function generateEventId(): string {
 }
 
 // Get attribution data (imported from attribution.ts)
+let cachedAttribution: Record<string, any> | null = null;
+
 function getAttributionForEvent() {
+
   if (typeof window === 'undefined') return {}
+  if (cachedAttribution) return cachedAttribution;
   
   try {
     const stored = localStorage.getItem('attribution')
@@ -38,7 +42,7 @@ function getAttributionForEvent() {
     const attribution = JSON.parse(stored)
     const { firstTouch = {}, lastTouch = {}, touchCount = 0 } = attribution
     
-    return {
+    cachedAttribution = {
       // First touch
       first_touch_source: firstTouch.utm_source,
       first_touch_medium: firstTouch.utm_medium,
@@ -62,6 +66,8 @@ function getAttributionForEvent() {
       first_fbclid: firstTouch.fbclid,
       last_fbclid: lastTouch.fbclid,
     }
+
+    return cachedAttribution
   } catch {
     return {}
   }
