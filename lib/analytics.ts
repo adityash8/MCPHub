@@ -5,15 +5,6 @@ interface TrackParams {
   [key: string]: string | number | boolean | undefined | null
 }
 
-// User data for Enhanced Conversions
-interface UserData {
-  email?: string
-  phone_number?: string
-  first_name?: string
-  last_name?: string
-  country?: string
-}
-
 // Generate UUID for event deduplication
 function generateEventId(): string {
   if (typeof window !== 'undefined' && window.crypto && window.crypto.randomUUID) {
@@ -104,43 +95,6 @@ export function track(eventName: string, params: TrackParams = {}) {
   if (process.env.NODE_ENV === 'development') {
     console.log('[Analytics]', eventName, payload)
   }
-}
-
-// Identify user after auth
-export function identify(userId: string, traits: TrackParams = {}) {
-  if (typeof window === 'undefined') return
-
-  // PostHog identify
-  if (posthog.__loaded) {
-    posthog.identify(userId, traits)
-  }
-
-  // Push to dataLayer for GTM
-  window.dataLayer = window.dataLayer || []
-  window.dataLayer.push({
-    event: 'user_identified',
-    user_id: userId,
-    ...traits,
-  })
-}
-
-// Set user data for Enhanced Conversions
-export function setUserData(userData: UserData) {
-  if (typeof window === 'undefined') return
-
-  window.dataLayer = window.dataLayer || []
-  window.dataLayer.push({
-    event: 'user_data_set',
-    user_data: {
-      email: userData.email,
-      phone_number: userData.phone_number,
-      address: {
-        first_name: userData.first_name,
-        last_name: userData.last_name,
-        country: userData.country,
-      },
-    },
-  })
 }
 
 // Track page views
