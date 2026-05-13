@@ -25,3 +25,21 @@ export function formatNumber(num: number): string {
   return num.toString()
 }
 
+/**
+ * Sanitizes a URL to ensure it uses a safe protocol (http or https).
+ * Prevents javascript: URI XSS vulnerabilities.
+ */
+export function sanitizeUrl(url: string | undefined): string {
+  if (!url) return '#'
+  try {
+    const parsed = new URL(url)
+    if (parsed.protocol === 'http:' || parsed.protocol === 'https:') {
+      return url
+    }
+    return '#'
+  } catch (e) {
+    // If URL parsing fails, it might be a relative path or invalid
+    // For external links, we generally expect full URLs
+    return '#'
+  }
+}
