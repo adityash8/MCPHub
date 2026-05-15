@@ -1,0 +1,4 @@
+## 2024-05-15 - React Anchor Tag XSS Protection Pattern
+**Vulnerability:** External URLs passed directly to React anchor tag `href` attributes (like `githubUrl`) without validation are vulnerable to `javascript:` URI Cross-Site Scripting (XSS). An attacker could inject a malicious payload if the URL source becomes untrusted.
+**Learning:** React escapes text children by default, but DOES NOT protect `href` attributes against `javascript:` URIs. Any URL from an external source or configuration (even ostensibly trusted ones like GitHub URLs in a local DB) must be treated as potentially unsafe to maintain defense-in-depth.
+**Prevention:** Implement and enforce a standard `sanitizeUrl` utility that parses the input and explicitly allows only safe protocols (e.g., `http:`, `https:`), falling back to `#` for invalid or missing inputs. Always wrap untrusted URLs in this function before rendering them in anchor tags.

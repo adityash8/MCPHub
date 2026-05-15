@@ -25,3 +25,19 @@ export function formatNumber(num: number): string {
   return num.toString()
 }
 
+/**
+ * Sanitizes external URLs to prevent javascript: URI XSS payloads.
+ * Only allows http: and https: protocols. Returns '#' for invalid URLs.
+ */
+export function sanitizeUrl(url: string | undefined): string {
+  if (!url) return '#'
+  try {
+    const parsedUrl = new URL(url)
+    if (['http:', 'https:'].includes(parsedUrl.protocol)) {
+      return url
+    }
+  } catch (e) {
+    // Return '#' if URL parsing fails
+  }
+  return '#'
+}
