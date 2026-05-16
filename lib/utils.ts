@@ -25,3 +25,21 @@ export function formatNumber(num: number): string {
   return num.toString()
 }
 
+export function getSafeUrl(url: string, fallbackUrl = '#'): string {
+  if (!url) return fallbackUrl
+
+  try {
+    const parsed = new URL(url)
+    if (['http:', 'https:'].includes(parsed.protocol)) {
+      return parsed.toString()
+    }
+  } catch (error) {
+    // If it's a relative path starting with '/', we can consider it safe.
+    // Otherwise return fallback to prevent javascript: and data: URIs.
+    if (url.startsWith('/')) {
+      return url
+    }
+  }
+
+  return fallbackUrl
+}

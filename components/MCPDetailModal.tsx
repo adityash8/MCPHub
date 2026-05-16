@@ -2,7 +2,7 @@
 
 import { MCP, Platform } from '@/lib/types'
 import { X, Star, ExternalLink, Calendar, ThumbsUp, Tag } from 'lucide-react'
-import { formatDate, formatNumber } from '@/lib/utils'
+import { formatDate, formatNumber, getSafeUrl } from '@/lib/utils'
 
 interface MCPDetailModalProps {
   mcp: MCP
@@ -42,7 +42,7 @@ export default function MCPDetailModal({
               {mcp.longDescription || mcp.description}
             </p>
             <a
-              href={mcp.githubUrl}
+              href={getSafeUrl(mcp.githubUrl)}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:underline"
