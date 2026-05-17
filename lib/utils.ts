@@ -25,3 +25,27 @@ export function formatNumber(num: number): string {
   return num.toString()
 }
 
+/**
+ * Sanitizes a URL to ensure it uses a safe protocol (http or https).
+ * Prevents javascript: URI XSS vulnerabilities.
+ */
+export function sanitizeUrl(url: string | undefined): string | undefined {
+  if (!url) return url;
+
+  try {
+    const parsed = new URL(url);
+    if (parsed.protocol === 'http:' || parsed.protocol === 'https:') {
+      return url;
+    }
+  } catch (e) {
+    // Fallback for relative URLs if they don't contain javascript:
+    if (!url.trim().toLowerCase().startsWith('javascript:')) {
+        // Simple heuristic for relative URLs
+        if (url.startsWith('/') || url.startsWith('.') || url.startsWith('#') || url.startsWith('?')) {
+            return url;
+        }
+    }
+  }
+
+  return '#'; // Safe fallback
+}
