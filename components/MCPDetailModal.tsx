@@ -1,15 +1,15 @@
-'use client'
+"use client";
 
-import { MCP, Platform } from '@/lib/types'
-import { X, Star, ExternalLink, Calendar, ThumbsUp, Tag } from 'lucide-react'
-import { formatDate, formatNumber } from '@/lib/utils'
+import { MCP, Platform } from "@/lib/types";
+import { X, Star, ExternalLink, Calendar, ThumbsUp, Tag } from "lucide-react";
+import { formatDate, formatNumber, sanitizeUrl } from "@/lib/utils";
 
 interface MCPDetailModalProps {
-  mcp: MCP
-  isOpen: boolean
-  onClose: () => void
-  isSelected: boolean
-  onToggle: (mcp: MCP) => void
+  mcp: MCP;
+  isOpen: boolean;
+  onClose: () => void;
+  isSelected: boolean;
+  onToggle: (mcp: MCP) => void;
 }
 
 export default function MCPDetailModal({
@@ -19,7 +19,7 @@ export default function MCPDetailModal({
   isSelected,
   onToggle,
 }: MCPDetailModalProps) {
-  if (!isOpen) return null
+  if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
@@ -42,7 +42,7 @@ export default function MCPDetailModal({
               {mcp.longDescription || mcp.description}
             </p>
             <a
-              href={mcp.githubUrl}
+              href={sanitizeUrl(mcp.githubUrl)}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:underline"
@@ -97,7 +97,7 @@ export default function MCPDetailModal({
                   key={platform}
                   className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-lg text-sm"
                 >
-                  {platform.replace('-', ' ')}
+                  {platform.replace("-", " ")}
                 </span>
               ))}
             </div>
@@ -143,20 +143,19 @@ export default function MCPDetailModal({
           <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
             <button
               onClick={() => {
-                onToggle(mcp)
+                onToggle(mcp);
               }}
               className={`w-full py-3 px-4 rounded-lg font-semibold transition-colors ${
                 isSelected
-                  ? 'bg-red-600 hover:bg-red-700 text-white'
-                  : 'bg-blue-600 hover:bg-blue-700 text-white'
+                  ? "bg-red-600 hover:bg-red-700 text-white"
+                  : "bg-blue-600 hover:bg-blue-700 text-white"
               }`}
             >
-              {isSelected ? 'Remove from Selection' : 'Add to Selection'}
+              {isSelected ? "Remove from Selection" : "Add to Selection"}
             </button>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
-
