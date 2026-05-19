@@ -25,3 +25,22 @@ export function formatNumber(num: number): string {
   return num.toString()
 }
 
+/**
+ * Sanitizes a URL to prevent javascript: URI Cross-Site Scripting (XSS) payloads.
+ * Explicitly validates that the protocol is either http: or https:.
+ * Returns a safe fallback URL ('#') if validation fails.
+ */
+export function sanitizeUrl(url: string | undefined): string {
+  if (!url) return '#'
+  try {
+    const parsed = new URL(url, 'https://example.com') // Base URL handles relative paths
+    // Only allow http and https protocols
+    if (parsed.protocol === 'http:' || parsed.protocol === 'https:') {
+      return url
+    }
+    return '#'
+  } catch (e) {
+    // If URL parsing fails, return safe fallback
+    return '#'
+  }
+}
