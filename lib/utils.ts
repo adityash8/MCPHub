@@ -25,3 +25,26 @@ export function formatNumber(num: number): string {
   return num.toString()
 }
 
+/**
+ * Sanitizes a URL to ensure it uses a safe protocol (http or https).
+ * Returns '#' if the URL uses an unsafe protocol (e.g., javascript:).
+ */
+export function sanitizeUrl(url: string): string {
+  if (!url) return '#'
+
+  try {
+    const parsedUrl = new URL(url, 'http://localhost')
+    const protocol = parsedUrl.protocol.toLowerCase()
+
+    if (protocol === 'http:' || protocol === 'https:') {
+      return url
+    }
+
+    // Log the attempted unsafe URL for monitoring
+    console.warn('Attempted to use unsafe URL protocol:', protocol)
+    return '#'
+  } catch (error) {
+    // If URL parsing fails, fail safe and return '#'
+    return '#'
+  }
+}
