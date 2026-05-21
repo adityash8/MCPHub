@@ -1,0 +1,4 @@
+## 2024-05-24 - [React `href` XSS via `javascript:` URIs]
+**Vulnerability:** External, user-provided, or unverified URLs used directly in `href` attributes in React components (like `<a>` tags) are vulnerable to Cross-Site Scripting (XSS) if the URL uses the `javascript:` protocol. React does not automatically sanitize `href` attributes against `javascript:` URIs.
+**Learning:** Even seemingly safe fields like `githubUrl` from the data store must be sanitized before being used in an `href` to ensure that malicious payloads cannot be executed if the data source is compromised or manipulated.
+**Prevention:** Always parse and validate the protocol of external URLs before rendering them in `href` attributes. Allow only safe protocols like `http:` and `https:`. Create and use a utility function like `sanitizeUrl` to enforce this validation consistently.
