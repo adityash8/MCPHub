@@ -5,6 +5,11 @@ interface TrackParams {
   [key: string]: string | number | boolean | undefined | null
 }
 
+let cachedAttribution: Record<string, any> | null = null
+
+export function clearAttributionCache() {
+  cachedAttribution = null
+}
 // Generate UUID for event deduplication
 function generateEventId(): string {
   if (typeof window !== 'undefined' && window.crypto && window.crypto.randomUUID) {
@@ -18,10 +23,11 @@ function generateEventId(): string {
   })
 }
 
-// Get attribution data (imported from attribution.ts)
+// Get attribution data (cached parse of localStorage)
 function getAttributionForEvent() {
   if (typeof window === 'undefined') return {}
-  
+  if (cachedAttribution) return cachedAttribution
+
   try {
     const stored = localStorage.getItem('attribution')
     if (!stored) return {}
@@ -29,7 +35,7 @@ function getAttributionForEvent() {
     const attribution = JSON.parse(stored)
     const { firstTouch = {}, lastTouch = {}, touchCount = 0 } = attribution
     
-    return {
+    cachedAttribution = {
       // First touch
       first_touch_source: firstTouch.utm_source,
       first_touch_medium: firstTouch.utm_medium,
@@ -53,6 +59,8 @@ function getAttributionForEvent() {
       first_fbclid: firstTouch.fbclid,
       last_fbclid: lastTouch.fbclid,
     }
+
+    return cachedAttribution
   } catch {
     return {}
   }
@@ -118,4 +126,3 @@ declare global {
     dataLayer: Record<string, unknown>[]
   }
 }
-
