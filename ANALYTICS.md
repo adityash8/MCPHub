@@ -66,10 +66,8 @@ track('sign_up_started', { method: 'email_capture' })
 ### Activation Tracking
 
 ```typescript
-import { trackActivationStep, recordSignupDate } from '@/lib/activation'
+import { trackActivationStep } from '@/lib/activation'
 
-// On signup
-recordSignupDate()
 
 // On key actions
 trackActivationStep('config_generated')

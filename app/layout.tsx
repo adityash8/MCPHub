@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
-import Script from "next/script";
-import "./globals.css";
-import { AnalyticsProvider } from "@/components/AnalyticsProvider";
+import type { Metadata } from 'next'
+import Script from 'next/script'
+import './globals.css'
+import { AnalyticsProvider } from '@/components/AnalyticsProvider'
 
 export const metadata: Metadata = {
   title: "MCPHub - Discover and Manage MCP Servers",
@@ -21,7 +21,9 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <head></head>
+
+      <head>
+      </head>
       <body className="antialiased">
         {/* GTM - Use custom domain if available */}
         {gtmId && (
