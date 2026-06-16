@@ -1,4 +1,5 @@
 import posthog from 'posthog-js'
+import { getAttributionForEvent } from './attribution'
 
 // Event params interface
 interface TrackParams {
@@ -31,54 +32,6 @@ function generateEventId(): string {
     const v = c === 'x' ? r : (r & 0x3) | 0x8
     return v.toString(16)
   })
-}
-
-// Get attribution data (imported from attribution.ts)
-let cachedAttribution: Record<string, any> | null = null;
-
-function getAttributionForEvent() {
-
-  if (typeof window === 'undefined') return {}
-  if (cachedAttribution) return cachedAttribution;
-  
-  if (cachedAttribution) return cachedAttribution
-
-  try {
-    const stored = localStorage.getItem('attribution')
-    if (!stored) return {}
-    
-    const attribution = JSON.parse(stored)
-    const { firstTouch = {}, lastTouch = {}, touchCount = 0 } = attribution
-    
-    cachedAttribution = {
-      // First touch
-      first_touch_source: firstTouch.utm_source,
-      first_touch_medium: firstTouch.utm_medium,
-      first_touch_campaign: firstTouch.utm_campaign,
-      first_touch_content: firstTouch.utm_content,
-      first_touch_term: firstTouch.utm_term,
-      
-      // Last touch
-      last_touch_source: lastTouch.utm_source,
-      last_touch_medium: lastTouch.utm_medium,
-      last_touch_campaign: lastTouch.utm_campaign,
-      last_touch_content: lastTouch.utm_content,
-      last_touch_term: lastTouch.utm_term,
-      
-      // Touch count
-      touch_count: touchCount,
-      
-      // Click IDs for platform matching
-      first_gclid: firstTouch.gclid,
-      last_gclid: lastTouch.gclid,
-      first_fbclid: firstTouch.fbclid,
-      last_fbclid: lastTouch.fbclid,
-    }
-
-    return cachedAttribution
-  } catch {
-    return {}
-  }
 }
 
 // Main track function - sends to both dataLayer and PostHog
