@@ -1,3 +1,5 @@
+import { clearAttributionCache } from './analytics'
+
 const UTM_PARAMS = [
   'utm_source',
   'utm_medium',
@@ -67,6 +69,7 @@ export function captureAttribution(): Attribution {
   // Persist to localStorage
   try {
     localStorage.setItem('attribution', JSON.stringify(stored))
+    clearAttributionCache()
   } catch (e) {
     // localStorage not available
   }
@@ -134,4 +137,3 @@ export function getMetaCookies() {
     fbp: cookies._fbp,
   }
 }
-
