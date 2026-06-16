@@ -14,6 +14,12 @@ interface UserData {
   country?: string
 }
 
+let cachedAttribution: Record<string, any> | null = null
+
+export function clearAttributionCache() {
+  cachedAttribution = null
+}
+
 // Generate UUID for event deduplication
 function generateEventId(): string {
   if (typeof window !== 'undefined' && window.crypto && window.crypto.randomUUID) {
@@ -27,10 +33,11 @@ function generateEventId(): string {
   })
 }
 
-// Get attribution data (imported from attribution.ts)
+// Get attribution data (cached parse of localStorage)
 function getAttributionForEvent() {
   if (typeof window === 'undefined') return {}
-  
+  if (cachedAttribution) return cachedAttribution
+
   try {
     const stored = localStorage.getItem('attribution')
     if (!stored) return {}
@@ -38,7 +45,7 @@ function getAttributionForEvent() {
     const attribution = JSON.parse(stored)
     const { firstTouch = {}, lastTouch = {}, touchCount = 0 } = attribution
     
-    return {
+    cachedAttribution = {
       // First touch
       first_touch_source: firstTouch.utm_source,
       first_touch_medium: firstTouch.utm_medium,
@@ -62,6 +69,8 @@ function getAttributionForEvent() {
       first_fbclid: firstTouch.fbclid,
       last_fbclid: lastTouch.fbclid,
     }
+
+    return cachedAttribution
   } catch {
     return {}
   }
@@ -106,24 +115,6 @@ export function track(eventName: string, params: TrackParams = {}) {
   }
 }
 
-// Identify user after auth
-export function identify(userId: string, traits: TrackParams = {}) {
-  if (typeof window === 'undefined') return
-
-  // PostHog identify
-  if (posthog.__loaded) {
-    posthog.identify(userId, traits)
-  }
-
-  // Push to dataLayer for GTM
-  window.dataLayer = window.dataLayer || []
-  window.dataLayer.push({
-    event: 'user_identified',
-    user_id: userId,
-    ...traits,
-  })
-}
-
 // Set user data for Enhanced Conversions
 export function setUserData(userData: UserData) {
   if (typeof window === 'undefined') return
@@ -164,4 +155,3 @@ declare global {
     dataLayer: Record<string, unknown>[]
   }
 }
-
