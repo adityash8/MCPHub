@@ -88,7 +88,9 @@ export default function DirectoryPage() {
     setIsModalOpen(true)
   }
 
-  const selectedMCPIds = useMemo(() => new Set(selectedMCPs.map(m => m.id)), [selectedMCPs])
+  const selectedMCPIds = useMemo(() => {
+    return new Set(selectedMCPs.map((m) => m.id))
+  }, [selectedMCPs])
 
   const isMCPSelected = (mcp: MCP) => {
     return selectedMCPIds.has(mcp.id)
