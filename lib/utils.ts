@@ -5,6 +5,18 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
+export function sanitizeUrl(url: string): string {
+  try {
+    const parsed = new URL(url)
+    if (['http:', 'https:'].includes(parsed.protocol)) {
+      return url
+    }
+  } catch (e) {
+    // Invalid URL
+  }
+  return '#'
+}
+
 export function formatDate(dateString: string): string {
   const date = new Date(dateString)
   const now = new Date()
