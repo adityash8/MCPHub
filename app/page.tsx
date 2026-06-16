@@ -119,7 +119,7 @@ export default function Home() {
             Ready to streamline your MCP workflow?
           </h3>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-            Join developers who've saved hours of setup time
+            Join developers who&apos;ve saved hours of setup time
           </p>
           <form
             action="/api/email-capture"
