@@ -11,30 +11,10 @@ export function generateConfig(
   for (const mcp of mcps) {
     const serverName = mcp.id.replace(/-/g, '_')
     
-    if (platform === 'claude-desktop') {
-      // Claude Desktop uses npm package format
-      config.mcpServers[serverName] = {
-        command: 'npx',
-        args: ['-y', `@modelcontextprotocol/server-${mcp.id}`],
-      }
-    } else if (platform === 'cursor') {
-      // Cursor uses similar format but may need different paths
-      config.mcpServers[serverName] = {
-        command: 'npx',
-        args: ['-y', `@modelcontextprotocol/server-${mcp.id}`],
-      }
-    } else if (platform === 'continue') {
-      // Continue uses similar format
-      config.mcpServers[serverName] = {
-        command: 'npx',
-        args: ['-y', `@modelcontextprotocol/server-${mcp.id}`],
-      }
-    } else {
-      // Default format
-      config.mcpServers[serverName] = {
-        command: 'npx',
-        args: ['-y', `@modelcontextprotocol/server-${mcp.id}`],
-      }
+    // Default format for all platforms
+    config.mcpServers[serverName] = {
+      command: 'npx',
+      args: ['-y', `@modelcontextprotocol/server-${mcp.id}`],
     }
   }
 
