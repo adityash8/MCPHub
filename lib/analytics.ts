@@ -5,21 +5,11 @@ interface TrackParams {
   [key: string]: string | number | boolean | undefined | null
 }
 
-// User data for Enhanced Conversions
-interface UserData {
-  email?: string
-  phone_number?: string
-  first_name?: string
-  last_name?: string
-  country?: string
-}
-
 let cachedAttribution: Record<string, any> | null = null
 
 export function clearAttributionCache() {
   cachedAttribution = null
 }
-
 // Generate UUID for event deduplication
 function generateEventId(): string {
   if (typeof window !== 'undefined' && window.crypto && window.crypto.randomUUID) {
@@ -33,14 +23,9 @@ function generateEventId(): string {
   })
 }
 
-// Get attribution data (imported from attribution.ts)
-let cachedAttribution: Record<string, any> | null = null;
-
+// Get attribution data (cached parse of localStorage)
 function getAttributionForEvent() {
-
   if (typeof window === 'undefined') return {}
-  if (cachedAttribution) return cachedAttribution;
-  
   if (cachedAttribution) return cachedAttribution
 
   try {
@@ -118,25 +103,6 @@ export function track(eventName: string, params: TrackParams = {}) {
   if (process.env.NODE_ENV === 'development') {
     console.log('[Analytics]', eventName, payload)
   }
-}
-
-// Set user data for Enhanced Conversions
-export function setUserData(userData: UserData) {
-  if (typeof window === 'undefined') return
-
-  window.dataLayer = window.dataLayer || []
-  window.dataLayer.push({
-    event: 'user_data_set',
-    user_data: {
-      email: userData.email,
-      phone_number: userData.phone_number,
-      address: {
-        first_name: userData.first_name,
-        last_name: userData.last_name,
-        country: userData.country,
-      },
-    },
-  })
 }
 
 // Track page views
