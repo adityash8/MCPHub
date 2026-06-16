@@ -1,4 +1,4 @@
-import { track } from './analytics'
+
 
 export const REFERRAL_EVENTS = {
   // Referrer actions
@@ -19,18 +19,4 @@ export const REFERRAL_EVENTS = {
 
 type ReferralEvent = keyof typeof REFERRAL_EVENTS
 
-export function trackReferral(
-  event: ReferralEvent,
-  params: {
-    referrerId?: string
-    refereeId?: string
-    rewardType?: string
-    rewardValue?: number
-  } = {}
-) {
-  track(REFERRAL_EVENTS[event], {
-    ...params,
-    referral_program_version: 'v1', // useful for A/B tests
-  })
-}
 
