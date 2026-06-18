@@ -13,7 +13,7 @@ export async function POST(request: NextRequest) {
     }
 
     // For MVP, just log the email. In production, save to database or send to email service
-    console.log('Email captured:', email)
+    console.log('Email captured: [REDACTED]')
 
     // Note: Client-side tracking will fire sign_up_started event
     // Server-side tracking can be added here if needed

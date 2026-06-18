@@ -1,5 +1,27 @@
 import { track } from './analytics'
 
+type ShareChannel = 'email' | 'twitter' | 'linkedin' | 'slack' | 'link_copy'
+
+// Track when user shares content
+export function trackShare(params: {
+  contentType: string
+  contentId: string
+  channel: ShareChannel
+  sharerId: string
+}) {
+  const shareUrl = generateShareUrl(params.contentId, params.sharerId)
+
+  track('content_shared', {
+    content_type: params.contentType,
+    content_id: params.contentId,
+    share_channel: params.channel,
+    sharer_id: params.sharerId,
+    share_url: shareUrl,
+  })
+
+  return shareUrl
+}
+
 // Track when someone arrives via viral loop
 export function trackViralArrival() {
   if (typeof window === 'undefined') return
@@ -29,3 +51,11 @@ export function trackViralArrival() {
     }
   }
 }
+
+// Generate trackable share URLs
+function generateShareUrl(contentId: string, sharerId: string): string {
+  if (typeof window === 'undefined') return ''
+  const base = `${window.location.origin}/shared/${contentId}`
+  return `${base}?ref=${sharerId}`
+}
+
