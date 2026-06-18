@@ -80,12 +80,3 @@ function getDaysSinceSignup(): number {
   }
 }
 
-// Call on signup to set the date
-export function recordSignupDate() {
-  try {
-    localStorage.setItem('signup_date', new Date().toISOString())
-  } catch {
-    // localStorage not available
-  }
-}
-
