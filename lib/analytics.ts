@@ -34,13 +34,9 @@ function generateEventId(): string {
 }
 
 // Get attribution data (imported from attribution.ts)
-let cachedAttribution: Record<string, any> | null = null;
-
 function getAttributionForEvent() {
 
   if (typeof window === 'undefined') return {}
-  if (cachedAttribution) return cachedAttribution;
-  
   if (cachedAttribution) return cachedAttribution
 
   try {
