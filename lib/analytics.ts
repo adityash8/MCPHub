@@ -6,15 +6,6 @@ interface TrackParams {
   [key: string]: string | number | boolean | undefined | null
 }
 
-// User data for Enhanced Conversions
-interface UserData {
-  email?: string
-  phone_number?: string
-  first_name?: string
-  last_name?: string
-  country?: string
-}
-
 let cachedAttribution: Record<string, any> | null = null
 
 export function clearAttributionCache() {
@@ -71,25 +62,6 @@ export function track(eventName: string, params: TrackParams = {}) {
   if (process.env.NODE_ENV === 'development') {
     console.log('[Analytics]', eventName, payload)
   }
-}
-
-// Set user data for Enhanced Conversions
-export function setUserData(userData: UserData) {
-  if (typeof window === 'undefined') return
-
-  window.dataLayer = window.dataLayer || []
-  window.dataLayer.push({
-    event: 'user_data_set',
-    user_data: {
-      email: userData.email,
-      phone_number: userData.phone_number,
-      address: {
-        first_name: userData.first_name,
-        last_name: userData.last_name,
-        country: userData.country,
-      },
-    },
-  })
 }
 
 // Track page views
