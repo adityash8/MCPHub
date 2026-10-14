@@ -1,6 +1,6 @@
 # MCPHub
 
-The central directory and management platform for Model Context Protocol (MCP) servers. Discover, configure, and monitor MCPs for Claude Desktop, Cursor, and more.
+Browse MCP Registry listings and generate client config templates for Claude Desktop, Cursor, Continue, and Cline.
 
 ## 🚀 Live Site
 
@@ -8,15 +8,15 @@ The central directory and management platform for Model Context Protocol (MCP) s
 
 ## Features
 
-- **Curated Directory**: 50+ verified MCPs, categorized and searchable
-- **One-Click Configs**: Generate working configs for Claude Desktop, Cursor, Continue, and Cline
-- **Search & Filter**: Find MCPs by name, description, tags, or category
+- **Registry directory**: 53 selected latest active Registry listings across developer, productivity, and client workflows. Every listing records its source and verification scope.
+- **Config templates**: Generate client-specific JSON or Continue YAML where setup is supported. Five npm launch templates and five Cursor remote URLs have checked publisher instructions; other exports are blocked pending setup verification. Installation, connections, package health, and security are untested.
+- **Search & Filter**: Find servers by name, description, or category
 - **Selection Management**: Build your MCP stack with an intuitive selection panel
 - **Email Capture**: Simple lead capture for future updates
 
 ## Tech Stack
 
-- **Framework**: Next.js 14 (App Router)
+- **Framework**: Next.js 15 (App Router)
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
 - **Deployment**: Vercel
@@ -64,11 +64,11 @@ MCPHub/
 ## MVP Features
 
 ✅ Landing page with value proposition  
-✅ MCP directory with 50+ curated MCPs  
+✅ Searchable MCP Registry snapshot; manual curation is still pending
 ✅ Search and category filtering  
 ✅ MCP detail modal with full information  
 ✅ Selection panel for managing chosen MCPs  
-✅ Config generation for multiple platforms  
+✅ Config template generation for supported client/transport combinations
 ✅ Email capture form  
 ✅ Responsive design with dark mode support  
 

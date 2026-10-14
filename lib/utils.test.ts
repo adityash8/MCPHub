@@ -1,49 +1,47 @@
-import assert from 'node:assert';
-import { describe, test, mock, afterEach, beforeEach } from 'node:test';
-import { formatDate } from './utils'; // Adjusted to typical Next.js/TS import style (extensionless)
+import { formatDate } from './utils'
 
 describe('formatDate', () => {
   beforeEach(() => {
     // Enable mocking of the global Date object
-    mock.timers.enable({ apis: ['Date'] });
+    jest.useFakeTimers();
     // Set fixed "current" time for deterministic tests
     const fakeNow = new Date('2024-05-15T12:00:00Z').getTime();
-    mock.timers.setTime(fakeNow);
+    jest.setSystemTime(fakeNow);
   });
 
   afterEach(() => {
     // Reset timers after each test to avoid polluting the global state
-    mock.timers.reset();
+    jest.useRealTimers();
   });
 
   test('returns "Today" for the exact same day', () => {
     // Diff: 0 days
-    assert.strictEqual(formatDate('2024-05-15T10:00:00Z'), 'Today');
+    expect(formatDate('2024-05-15T10:00:00Z')).toBe('Today');
   });
 
   test('returns "Yesterday" for exactly 1 day ago', () => {
     // Diff: 1 day
-    assert.strictEqual(formatDate('2024-05-14T12:00:00Z'), 'Yesterday');
+    expect(formatDate('2024-05-14T12:00:00Z')).toBe('Yesterday');
   });
 
   test('returns "X days ago" for less than 7 days', () => {
     // Diff: 5 days
-    assert.strictEqual(formatDate('2024-05-10T12:00:00Z'), '5 days ago');
+    expect(formatDate('2024-05-10T12:00:00Z')).toBe('5 days ago');
   });
 
   test('returns "X weeks ago" for less than 30 days', () => {
     // Diff: 21 days
-    assert.strictEqual(formatDate('2024-04-24T12:00:00Z'), '3 weeks ago');
+    expect(formatDate('2024-04-24T12:00:00Z')).toBe('3 weeks ago');
   });
 
   test('returns "X months ago" for less than 365 days', () => {
     // Diff: ~120 days (approx 4 months ago)
-    assert.strictEqual(formatDate('2024-01-15T12:00:00Z'), '4 months ago');
+    expect(formatDate('2024-01-15T12:00:00Z')).toBe('4 months ago');
   });
 
   test('returns "X years ago" for more than 365 days', () => {
     // Diff: > 730 days
-    assert.strictEqual(formatDate('2022-05-15T12:00:00Z'), '2 years ago');
+    expect(formatDate('2022-05-15T12:00:00Z')).toBe('2 years ago');
   });
 
   test('handles future dates gracefully', () => {
@@ -56,7 +54,7 @@ describe('formatDate', () => {
     // The implementation:
     // const diffInDays = Math.floor((now.getTime() - date.getTime()) / (1000 * 60 * 60 * 24))
     // if diffInDays is -2, it hits `if (diffInDays < 7) return \`${diffInDays} days ago\``
-    assert.strictEqual(formatDate('2024-05-20T12:00:00Z'), '-5 days ago');
+    expect(formatDate('2024-05-20T12:00:00Z')).toBe('-5 days ago');
   });
 
   test('handles invalid dates by returning NaN text', () => {
@@ -66,6 +64,6 @@ describe('formatDate', () => {
     // NaN < 30 is false.
     // NaN < 365 is false.
     // Will return NaN years ago.
-    assert.strictEqual(formatDate('invalid date format'), 'NaN years ago');
+    expect(formatDate('invalid date format')).toBe('NaN years ago');
   });
 });

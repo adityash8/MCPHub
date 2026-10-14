@@ -1,0 +1,2599 @@
+{
+  "source": "https://registry.modelcontextprotocol.io",
+  "snapshot": "2026-10-13",
+  "servers": [
+    {
+      "id": "com.vercel/vercel-mcp",
+      "name": "com.vercel/vercel-mcp",
+      "description": "An MCP server for Vercel",
+      "version": "0.0.3",
+      "websiteUrl": null,
+      "repositoryUrl": "https://github.com/vercel/vercel-mcp-overview",
+      "updatedAt": "2026-01-14T18:38:33.404454Z",
+      "category": "Developer",
+      "reason": "Supports coding, documentation, infrastructure, or debugging work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?limit=100&search=vercel",
+        "publisherSourceUrl": "https://github.com/vercel/vercel-mcp-overview",
+        "publisherReadmeUrl": "https://api.github.com/repos/vercel/vercel-mcp-overview/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [],
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://mcp.vercel.com",
+          "headers": [],
+          "setupVerified": true,
+          "setupSourceUrl": "https://github.com/vercel/vercel-mcp-overview"
+        }
+      ]
+    },
+    {
+      "id": "io.github.vercel/next-devtools-mcp",
+      "name": "io.github.vercel/next-devtools-mcp",
+      "description": "Next.js development tools MCP server with stdio transport",
+      "version": "0.3.6",
+      "websiteUrl": null,
+      "repositoryUrl": "https://github.com/vercel/next-devtools-mcp",
+      "updatedAt": "2025-12-05T13:38:56.040579Z",
+      "category": "Developer",
+      "reason": "Supports coding, documentation, infrastructure, or debugging work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?limit=100&search=vercel",
+        "publisherSourceUrl": "https://github.com/vercel/next-devtools-mcp",
+        "publisherReadmeUrl": "https://api.github.com/repos/vercel/next-devtools-mcp/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "next-devtools-mcp",
+          "version": "0.3.6",
+          "binary": "next-devtools-mcp",
+          "transport": "stdio",
+          "environmentVariables": [],
+          "npmMetadataUrl": "https://registry.npmjs.org/next-devtools-mcp/0.3.6",
+          "npmMetadataChecked": true,
+          "launchVerified": true,
+          "launchArgs": []
+        }
+      ],
+      "remotes": []
+    },
+    {
+      "id": "com.microsoft/azure",
+      "name": "Azure MCP Server",
+      "description": "All Azure MCP tools to create a seamless connection between AI agents and Azure services.",
+      "version": "3.0.0-beta.48",
+      "websiteUrl": "https://github.com/microsoft/mcp/tree/main/servers/Azure.Mcp.Server",
+      "repositoryUrl": "https://github.com/microsoft/mcp",
+      "updatedAt": "2026-09-30T02:07:19.637605Z",
+      "category": "Developer",
+      "reason": "Supports coding, documentation, infrastructure, or debugging work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=azure&limit=100",
+        "publisherSourceUrl": "https://github.com/microsoft/mcp",
+        "publisherReadmeUrl": "https://api.github.com/repos/microsoft/mcp/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "nuget",
+          "identifier": "Azure.Mcp",
+          "version": "3.0.0-beta.48",
+          "binary": null,
+          "transport": "stdio",
+          "environmentVariables": [],
+          "npmMetadataUrl": null,
+          "npmMetadataChecked": false
+        },
+        {
+          "registryType": "npm",
+          "identifier": "@azure/mcp",
+          "version": "3.0.0-beta.48",
+          "binary": "azmcp",
+          "transport": "stdio",
+          "environmentVariables": [],
+          "npmMetadataUrl": "https://registry.npmjs.org/%40azure%2Fmcp/3.0.0-beta.48",
+          "npmMetadataChecked": true
+        },
+        {
+          "registryType": "pypi",
+          "identifier": "msmcp-azure",
+          "version": "3.0.0b48",
+          "binary": null,
+          "transport": "stdio",
+          "environmentVariables": [],
+          "npmMetadataUrl": null,
+          "npmMetadataChecked": false
+        },
+        {
+          "registryType": "mcpb",
+          "identifier": "https://github.com/microsoft/mcp/releases/download/Azure.Mcp.Server-3.0.0-beta.48/Azure.Mcp.Server-win-x64.mcpb",
+          "version": "",
+          "binary": null,
+          "transport": "stdio",
+          "environmentVariables": [],
+          "npmMetadataUrl": null,
+          "npmMetadataChecked": false
+        },
+        {
+          "registryType": "mcpb",
+          "identifier": "https://github.com/microsoft/mcp/releases/download/Azure.Mcp.Server-3.0.0-beta.48/Azure.Mcp.Server-win-arm64.mcpb",
+          "version": "",
+          "binary": null,
+          "transport": "stdio",
+          "environmentVariables": [],
+          "npmMetadataUrl": null,
+          "npmMetadataChecked": false
+        },
+        {
+          "registryType": "mcpb",
+          "identifier": "https://github.com/microsoft/mcp/releases/download/Azure.Mcp.Server-3.0.0-beta.48/Azure.Mcp.Server-linux-x64.mcpb",
+          "version": "",
+          "binary": null,
+          "transport": "stdio",
+          "environmentVariables": [],
+          "npmMetadataUrl": null,
+          "npmMetadataChecked": false
+        },
+        {
+          "registryType": "mcpb",
+          "identifier": "https://github.com/microsoft/mcp/releases/download/Azure.Mcp.Server-3.0.0-beta.48/Azure.Mcp.Server-linux-arm64.mcpb",
+          "version": "",
+          "binary": null,
+          "transport": "stdio",
+          "environmentVariables": [],
+          "npmMetadataUrl": null,
+          "npmMetadataChecked": false
+        },
+        {
+          "registryType": "mcpb",
+          "identifier": "https://github.com/microsoft/mcp/releases/download/Azure.Mcp.Server-3.0.0-beta.48/Azure.Mcp.Server-osx-x64.mcpb",
+          "version": "",
+          "binary": null,
+          "transport": "stdio",
+          "environmentVariables": [],
+          "npmMetadataUrl": null,
+          "npmMetadataChecked": false
+        },
+        {
+          "registryType": "mcpb",
+          "identifier": "https://github.com/microsoft/mcp/releases/download/Azure.Mcp.Server-3.0.0-beta.48/Azure.Mcp.Server-osx-arm64.mcpb",
+          "version": "",
+          "binary": null,
+          "transport": "stdio",
+          "environmentVariables": [],
+          "npmMetadataUrl": null,
+          "npmMetadataChecked": false
+        }
+      ],
+      "remotes": []
+    },
+    {
+      "id": "io.github.Azure/containerization-assist",
+      "name": "Containerization Assist",
+      "description": "TypeScript MCP server for AI-powered containerization workflows with Docker and Kubernetes support",
+      "version": "1.5.0",
+      "websiteUrl": "https://github.com/Azure/containerization-assist#readme",
+      "repositoryUrl": "https://github.com/Azure/containerization-assist",
+      "updatedAt": "2026-07-02T12:41:07.662494Z",
+      "category": "Developer",
+      "reason": "Supports coding, documentation, infrastructure, or debugging work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=azure&limit=100",
+        "publisherSourceUrl": "https://github.com/Azure/containerization-assist",
+        "publisherReadmeUrl": null,
+        "publisherReadmeRetrieved": false,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "containerization-assist-mcp",
+          "version": "1.5.0",
+          "binary": null,
+          "transport": "stdio",
+          "environmentVariables": [
+            {
+              "name": "DOCKER_SOCKET",
+              "description": "Docker socket path or named pipe",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "LOG_LEVEL",
+              "description": "Logging level (debug, info, warn, error)",
+              "required": false,
+              "secret": false
+            }
+          ],
+          "npmMetadataUrl": "https://registry.npmjs.org/containerization-assist-mcp/1.5.0",
+          "npmMetadataChecked": true
+        }
+      ],
+      "remotes": []
+    },
+    {
+      "id": "io.github.mongodb-js/mongodb-mcp-server",
+      "name": "io.github.mongodb-js/mongodb-mcp-server",
+      "description": "MongoDB Model Context Protocol Server",
+      "version": "2.1.0",
+      "websiteUrl": null,
+      "repositoryUrl": "https://github.com/mongodb-js/mongodb-mcp-server",
+      "updatedAt": "2026-08-10T12:31:11.122426Z",
+      "category": "Developer",
+      "reason": "Supports coding, documentation, infrastructure, or debugging work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=mongodb&limit=100",
+        "publisherSourceUrl": "https://github.com/mongodb-js/mongodb-mcp-server",
+        "publisherReadmeUrl": "https://api.github.com/repos/mongodb-js/mongodb-mcp-server/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "mongodb-mcp-server",
+          "version": "2.1.0",
+          "binary": "mongodb-mcp-server",
+          "transport": "stdio",
+          "environmentVariables": [
+            {
+              "name": "MDB_MCP_ALLOW_REQUEST_OVERRIDES",
+              "description": "When set to true, allows configuration values to be overridden via request headers and query parameters.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_API_CLIENT_ID",
+              "description": "Atlas API client ID for authentication. Required for running Atlas tools.",
+              "required": false,
+              "secret": true
+            },
+            {
+              "name": "MDB_MCP_API_CLIENT_SECRET",
+              "description": "Atlas API client secret for authentication. Required for running Atlas tools.",
+              "required": false,
+              "secret": true
+            },
+            {
+              "name": "MDB_MCP_ASSISTANT_BASE_URL",
+              "description": "Base URL for the MongoDB Assistant API.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_ATLAS_TEMPORARY_DATABASE_USER_LIFETIME_MS",
+              "description": "Time in milliseconds that temporary database users created when connecting to MongoDB Atlas clusters will remain active before being automatically deleted.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_CONFIRMATION_REQUIRED_TOOLS",
+              "description": "Comma separated values of tool names that require user confirmation before execution. Requires the client to support elicitation.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_CONNECTION_SCOPE",
+              "description": "Visibility scope for MongoDB connections created at runtime. With 'session' (the default), each MCP session only sees the connections it created (plus the shared 'preconfigured' one) and they are closed when the session ends — recommended when the HTTP transport is exposed to multiple clients without authentication. With 'global', connections are shared across all sessions and survive session rotation.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_CONNECTION_STRING",
+              "description": "MongoDB connection string for direct database connections. Optional, if not set, you'll need to call the connect tool before interacting with MongoDB data.",
+              "required": false,
+              "secret": true
+            },
+            {
+              "name": "MDB_MCP_DISABLE_SERVER_SIDE_JS",
+              "description": "When set to true, disallows the use of server-side JavaScript operators (such as $where, $function, and $accumulator) in query filters and aggregation pipelines.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_DISABLED_TOOLS",
+              "description": "Comma separated values of tool names, operation types, and/or categories of tools that will be disabled.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_DRY_RUN",
+              "description": "When true, runs the server in dry mode: dumps configuration and enabled tools, then exits without starting the server.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_ELICITATION_TIMEOUT_MS",
+              "description": "Time in milliseconds the user has to respond to an elicitation request (such as a tool confirmation prompt) before it fails.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_EXPORT_CLEANUP_INTERVAL_MS",
+              "description": "Time in milliseconds between export cleanup cycles that remove expired export files.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_EXPORT_TIMEOUT_MS",
+              "description": "Time in milliseconds after which an export is considered expired and eligible for cleanup.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_EXPORTS_PATH",
+              "description": "Folder to store exported data files.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_EXTERNALLY_MANAGED_SESSIONS",
+              "description": "When true, the HTTP transport allows requests with a session ID supplied externally through the 'mcp-session-id' header. When an external ID is supplied, the initialization request is optional.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_HEALTH_CHECK_HOST",
+              "description": "Deprecated. Use `monitoringServerHost` instead. Host address to bind the healthCheck HTTP server to (only used when transport is 'http'). If provided, `healthCheckPort` must also be set.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_HEALTH_CHECK_PORT",
+              "description": "Deprecated. Use `monitoringServerPort` instead. Port number for the healthCheck HTTP server (only used when transport is 'http'). If provided, `healthCheckHost` must also be set.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_HTTP_BODY_LIMIT",
+              "description": "Maximum size of the HTTP request body in bytes (only used when transport is 'http'). This value is passed as the optional limit parameter to the Express.js json() middleware.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_HTTP_HEADERS",
+              "description": "Header that the HTTP server will validate when making requests (only used when transport is 'http').",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_HTTP_HOST",
+              "description": "Host address to bind the HTTP server to (only used when transport is 'http').",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_HTTP_PORT",
+              "description": "Port number for the HTTP server (only used when transport is 'http'). Use 0 for a random port.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_HTTP_RESPONSE_TYPE",
+              "description": "The HTTP response type for tool responses: 'sse' for Server-Sent Events, 'json' for standard JSON responses.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_IDLE_TIMEOUT_MS",
+              "description": "Idle timeout for a client to disconnect (only applies to http transport).",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_INDEX_CHECK",
+              "description": "When set to true, enforces that query operations must use an index, rejecting queries that perform a collection scan.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_LOG_PATH",
+              "description": "Folder to store logs.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_LOGGERS",
+              "description": "Comma separated values of logger types.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_MAX_ACTIVE_CONNECTIONS",
+              "description": "Maximum number of MongoDB connections a single scope (an MCP session by default, see connectionScope) can hold open. When exceeded, the scope's least-recently-used connection is closed and its connectionId revoked. The preconfigured connection does not count towards the limit.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_MAX_BYTES_PER_QUERY",
+              "description": "The maximum size in bytes for results from a find or aggregate tool call. This serves as an upper bound for the responseBytesLimit parameter in those tools.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_MAX_DOCUMENTS_PER_QUERY",
+              "description": "The maximum number of documents that can be returned by a find or aggregate tool call. For the find tool, the effective limit will be the smaller of this value and the tool's limit parameter.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_MAX_SESSIONS",
+              "description": "Maximum number of concurrent sessions the HTTP transport will hold in memory (only used when transport is 'http'). Each session holds a full server instance, transport, and timers, so choose a value based on your deployment's available memory; the default is a conservative safety net rather than a recommended production value.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_MAX_TIME_M_S",
+              "description": "The maximum time in milliseconds that operations are allowed to run on the MongoDB server. When set, this value is passed as the maxTimeMS option to read operations such as find, aggregate, and count.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_MCP_CLIENT_LOG_LEVEL",
+              "description": "Minimum severity level for log messages forwarded to the MCP client.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_MONITORING_SERVER_FEATURES",
+              "description": "Features to expose on the monitoring server (only used when transport is 'http' and monitoringServerHost/monitoringServerPort are set).",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_MONITORING_SERVER_HOST",
+              "description": "Host address to bind the monitoring HTTP server to (only used when transport is 'http'). If provided, `monitoringServerPort` must also be set.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_MONITORING_SERVER_PORT",
+              "description": "Port number for the monitoring HTTP server (only used when transport is 'http'). If provided, `monitoringServerHost` must also be set.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_NOTIFICATION_TIMEOUT_MS",
+              "description": "Notification timeout for a client to be aware of disconnect (only applies to http transport).",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_PREVIEW_FEATURES",
+              "description": "Comma separated values of preview features that are enabled.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_READ_ONLY",
+              "description": "When set to true, only allows read, connect, and metadata operation types, disabling create/update/delete operations.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_TELEMETRY",
+              "description": "When set to disabled, disables telemetry collection.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_TRANSPORT",
+              "description": "Either 'stdio' or 'http'.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_VOYAGE_API_KEY",
+              "description": "API key for Voyage AI embeddings service (required for creating Atlas Local deployments with auto-embed vector search capabilities).",
+              "required": false,
+              "secret": true
+            }
+          ],
+          "npmMetadataUrl": "https://registry.npmjs.org/mongodb-mcp-server/2.1.0",
+          "npmMetadataChecked": true
+        },
+        {
+          "registryType": "oci",
+          "identifier": "docker.io/mongodb/mongodb-mcp-server:2.1.0",
+          "version": "",
+          "binary": null,
+          "transport": "stdio",
+          "environmentVariables": [
+            {
+              "name": "MDB_MCP_ALLOW_REQUEST_OVERRIDES",
+              "description": "When set to true, allows configuration values to be overridden via request headers and query parameters.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_API_CLIENT_ID",
+              "description": "Atlas API client ID for authentication. Required for running Atlas tools.",
+              "required": false,
+              "secret": true
+            },
+            {
+              "name": "MDB_MCP_API_CLIENT_SECRET",
+              "description": "Atlas API client secret for authentication. Required for running Atlas tools.",
+              "required": false,
+              "secret": true
+            },
+            {
+              "name": "MDB_MCP_ASSISTANT_BASE_URL",
+              "description": "Base URL for the MongoDB Assistant API.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_ATLAS_TEMPORARY_DATABASE_USER_LIFETIME_MS",
+              "description": "Time in milliseconds that temporary database users created when connecting to MongoDB Atlas clusters will remain active before being automatically deleted.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_CONFIRMATION_REQUIRED_TOOLS",
+              "description": "Comma separated values of tool names that require user confirmation before execution. Requires the client to support elicitation.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_CONNECTION_SCOPE",
+              "description": "Visibility scope for MongoDB connections created at runtime. With 'session' (the default), each MCP session only sees the connections it created (plus the shared 'preconfigured' one) and they are closed when the session ends — recommended when the HTTP transport is exposed to multiple clients without authentication. With 'global', connections are shared across all sessions and survive session rotation.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_CONNECTION_STRING",
+              "description": "MongoDB connection string for direct database connections. Optional, if not set, you'll need to call the connect tool before interacting with MongoDB data.",
+              "required": false,
+              "secret": true
+            },
+            {
+              "name": "MDB_MCP_DISABLE_SERVER_SIDE_JS",
+              "description": "When set to true, disallows the use of server-side JavaScript operators (such as $where, $function, and $accumulator) in query filters and aggregation pipelines.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_DISABLED_TOOLS",
+              "description": "Comma separated values of tool names, operation types, and/or categories of tools that will be disabled.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_DRY_RUN",
+              "description": "When true, runs the server in dry mode: dumps configuration and enabled tools, then exits without starting the server.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_ELICITATION_TIMEOUT_MS",
+              "description": "Time in milliseconds the user has to respond to an elicitation request (such as a tool confirmation prompt) before it fails.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_EXPORT_CLEANUP_INTERVAL_MS",
+              "description": "Time in milliseconds between export cleanup cycles that remove expired export files.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_EXPORT_TIMEOUT_MS",
+              "description": "Time in milliseconds after which an export is considered expired and eligible for cleanup.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_EXPORTS_PATH",
+              "description": "Folder to store exported data files.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_EXTERNALLY_MANAGED_SESSIONS",
+              "description": "When true, the HTTP transport allows requests with a session ID supplied externally through the 'mcp-session-id' header. When an external ID is supplied, the initialization request is optional.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_HEALTH_CHECK_HOST",
+              "description": "Deprecated. Use `monitoringServerHost` instead. Host address to bind the healthCheck HTTP server to (only used when transport is 'http'). If provided, `healthCheckPort` must also be set.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_HEALTH_CHECK_PORT",
+              "description": "Deprecated. Use `monitoringServerPort` instead. Port number for the healthCheck HTTP server (only used when transport is 'http'). If provided, `healthCheckHost` must also be set.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_HTTP_BODY_LIMIT",
+              "description": "Maximum size of the HTTP request body in bytes (only used when transport is 'http'). This value is passed as the optional limit parameter to the Express.js json() middleware.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_HTTP_HEADERS",
+              "description": "Header that the HTTP server will validate when making requests (only used when transport is 'http').",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_HTTP_HOST",
+              "description": "Host address to bind the HTTP server to (only used when transport is 'http').",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_HTTP_PORT",
+              "description": "Port number for the HTTP server (only used when transport is 'http'). Use 0 for a random port.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_HTTP_RESPONSE_TYPE",
+              "description": "The HTTP response type for tool responses: 'sse' for Server-Sent Events, 'json' for standard JSON responses.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_IDLE_TIMEOUT_MS",
+              "description": "Idle timeout for a client to disconnect (only applies to http transport).",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_INDEX_CHECK",
+              "description": "When set to true, enforces that query operations must use an index, rejecting queries that perform a collection scan.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_LOG_PATH",
+              "description": "Folder to store logs.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_LOGGERS",
+              "description": "Comma separated values of logger types.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_MAX_ACTIVE_CONNECTIONS",
+              "description": "Maximum number of MongoDB connections a single scope (an MCP session by default, see connectionScope) can hold open. When exceeded, the scope's least-recently-used connection is closed and its connectionId revoked. The preconfigured connection does not count towards the limit.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_MAX_BYTES_PER_QUERY",
+              "description": "The maximum size in bytes for results from a find or aggregate tool call. This serves as an upper bound for the responseBytesLimit parameter in those tools.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_MAX_DOCUMENTS_PER_QUERY",
+              "description": "The maximum number of documents that can be returned by a find or aggregate tool call. For the find tool, the effective limit will be the smaller of this value and the tool's limit parameter.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_MAX_SESSIONS",
+              "description": "Maximum number of concurrent sessions the HTTP transport will hold in memory (only used when transport is 'http'). Each session holds a full server instance, transport, and timers, so choose a value based on your deployment's available memory; the default is a conservative safety net rather than a recommended production value.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_MAX_TIME_M_S",
+              "description": "The maximum time in milliseconds that operations are allowed to run on the MongoDB server. When set, this value is passed as the maxTimeMS option to read operations such as find, aggregate, and count.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_MCP_CLIENT_LOG_LEVEL",
+              "description": "Minimum severity level for log messages forwarded to the MCP client.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_MONITORING_SERVER_FEATURES",
+              "description": "Features to expose on the monitoring server (only used when transport is 'http' and monitoringServerHost/monitoringServerPort are set).",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_MONITORING_SERVER_HOST",
+              "description": "Host address to bind the monitoring HTTP server to (only used when transport is 'http'). If provided, `monitoringServerPort` must also be set.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_MONITORING_SERVER_PORT",
+              "description": "Port number for the monitoring HTTP server (only used when transport is 'http'). If provided, `monitoringServerHost` must also be set.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_NOTIFICATION_TIMEOUT_MS",
+              "description": "Notification timeout for a client to be aware of disconnect (only applies to http transport).",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_PREVIEW_FEATURES",
+              "description": "Comma separated values of preview features that are enabled.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_READ_ONLY",
+              "description": "When set to true, only allows read, connect, and metadata operation types, disabling create/update/delete operations.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_TELEMETRY",
+              "description": "When set to disabled, disables telemetry collection.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_TRANSPORT",
+              "description": "Either 'stdio' or 'http'.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "MDB_MCP_VOYAGE_API_KEY",
+              "description": "API key for Voyage AI embeddings service (required for creating Atlas Local deployments with auto-embed vector search capabilities).",
+              "required": false,
+              "secret": true
+            }
+          ],
+          "npmMetadataUrl": null,
+          "npmMetadataChecked": false
+        }
+      ],
+      "remotes": []
+    },
+    {
+      "id": "io.github.upstash/context7",
+      "name": "Context7",
+      "description": "Up-to-date code docs for any prompt",
+      "version": "4.3.0",
+      "websiteUrl": "https://context7.com",
+      "repositoryUrl": "https://github.com/upstash/context7",
+      "updatedAt": "2026-10-09T15:38:20.686157Z",
+      "category": "Developer",
+      "reason": "Supports coding, documentation, infrastructure, or debugging work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=context7&limit=100",
+        "publisherSourceUrl": "https://github.com/upstash/context7",
+        "publisherReadmeUrl": "https://api.github.com/repos/upstash/context7/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "@upstash/context7-mcp",
+          "version": "4.3.0",
+          "binary": "context7-mcp",
+          "transport": "stdio",
+          "environmentVariables": [
+            {
+              "name": "CONTEXT7_API_KEY",
+              "description": "API key for authentication",
+              "required": false,
+              "secret": true
+            }
+          ],
+          "npmMetadataUrl": "https://registry.npmjs.org/%40upstash%2Fcontext7-mcp/4.3.0",
+          "npmMetadataChecked": true
+        },
+        {
+          "registryType": "mcpb",
+          "identifier": "https://github.com/upstash/context7/releases/download/mcpb-v4.3.0/context7.mcpb",
+          "version": "4.3.0",
+          "binary": null,
+          "transport": "stdio",
+          "environmentVariables": [
+            {
+              "name": "CONTEXT7_API_KEY",
+              "description": "API key for authentication",
+              "required": false,
+              "secret": true
+            }
+          ],
+          "npmMetadataUrl": null,
+          "npmMetadataChecked": false
+        }
+      ],
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://mcp.context7.com/mcp",
+          "headers": [
+            {
+              "name": "Authorization",
+              "description": "API key for authentication. Accepts \"Bearer <key>\" or the raw key.",
+              "required": false,
+              "secret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "io.github.firecrawl/firecrawl-mcp-server",
+      "name": "Firecrawl MCP Server",
+      "description": "MCP server for Firecrawl — web search, scraping, and biomedical/arXiv paper search.",
+      "version": "3.29.1",
+      "websiteUrl": null,
+      "repositoryUrl": "https://github.com/firecrawl/firecrawl-mcp-server.git",
+      "updatedAt": "2026-10-09T06:51:14.543348Z",
+      "category": "Developer",
+      "reason": "Supports coding, documentation, infrastructure, or debugging work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=firecrawl&limit=100",
+        "publisherSourceUrl": "https://github.com/firecrawl/firecrawl-mcp-server.git",
+        "publisherReadmeUrl": "https://api.github.com/repos/firecrawl/firecrawl-mcp-server/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested. For the default cloud setup, FIRECRAWL_API_KEY is required by publisher instructions even though the Registry marks it optional."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "firecrawl-mcp",
+          "version": "3.29.1",
+          "binary": "firecrawl-mcp",
+          "transport": "stdio",
+          "environmentVariables": [
+            {
+              "name": "FIRECRAWL_API_KEY",
+              "description": "Your API key for Firecrawl",
+              "required": true,
+              "secret": true
+            }
+          ],
+          "npmMetadataUrl": "https://registry.npmjs.org/firecrawl-mcp/3.29.1",
+          "npmMetadataChecked": true,
+          "launchVerified": true,
+          "launchArgs": []
+        }
+      ],
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://mcp.firecrawl.dev/v2/mcp",
+          "headers": [
+            {
+              "name": "Authorization",
+              "description": "Optional. Bearer <FIRECRAWL_API_KEY>. Omit for the keyless tier.",
+              "required": false,
+              "secret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "io.github.getsentry/sentry-mcp",
+      "name": "io.github.getsentry/sentry-mcp",
+      "description": "MCP server for Sentry - error monitoring, issue tracking, and debugging for AI assistants",
+      "version": "0.42.0",
+      "websiteUrl": null,
+      "repositoryUrl": "https://github.com/getsentry/sentry-mcp",
+      "updatedAt": "2026-09-25T14:49:17.516259Z",
+      "category": "Developer",
+      "reason": "Supports coding, documentation, infrastructure, or debugging work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=sentry&limit=100",
+        "publisherSourceUrl": "https://github.com/getsentry/sentry-mcp",
+        "publisherReadmeUrl": "https://api.github.com/repos/getsentry/sentry-mcp/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "@sentry/mcp-server",
+          "version": "0.42.0",
+          "binary": "sentry-mcp",
+          "transport": "stdio",
+          "environmentVariables": [
+            {
+              "name": "SENTRY_ACCESS_TOKEN",
+              "description": "Your Sentry user authentication token",
+              "required": true,
+              "secret": true
+            }
+          ],
+          "npmMetadataUrl": "https://registry.npmjs.org/%40sentry%2Fmcp-server/0.42.0",
+          "npmMetadataChecked": true
+        }
+      ],
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://mcp.sentry.dev/mcp",
+          "headers": [],
+          "setupVerified": true,
+          "setupSourceUrl": "https://github.com/getsentry/sentry-mcp"
+        }
+      ]
+    },
+    {
+      "id": "io.github.brave/brave-search-mcp-server",
+      "name": "io.github.brave/brave-search-mcp-server",
+      "description": "Brave Search MCP Server: web results, images, videos, rich results, AI summaries, and more.",
+      "version": "2.1.3",
+      "websiteUrl": null,
+      "repositoryUrl": "https://github.com/brave/brave-search-mcp-server",
+      "updatedAt": "2026-08-20T16:12:11.244327Z",
+      "category": "Developer",
+      "reason": "Supports coding, documentation, infrastructure, or debugging work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=brave&limit=100",
+        "publisherSourceUrl": "https://github.com/brave/brave-search-mcp-server",
+        "publisherReadmeUrl": "https://api.github.com/repos/brave/brave-search-mcp-server/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "@brave/brave-search-mcp-server",
+          "version": "2.1.3",
+          "binary": "brave-search-mcp-server",
+          "transport": "stdio",
+          "environmentVariables": [
+            {
+              "name": "BRAVE_API_KEY",
+              "description": "Your API key for the service",
+              "required": true,
+              "secret": true
+            }
+          ],
+          "npmMetadataUrl": "https://registry.npmjs.org/%40brave%2Fbrave-search-mcp-server/2.1.3",
+          "npmMetadataChecked": true,
+          "launchVerified": true,
+          "launchArgs": [
+            "--transport",
+            "stdio"
+          ]
+        }
+      ],
+      "remotes": []
+    },
+    {
+      "id": "io.github.tavily-ai/tavily-mcp",
+      "name": "io.github.tavily-ai/tavily-mcp",
+      "description": "MCP server for advanced web search using Tavily",
+      "version": "0.2.15",
+      "websiteUrl": null,
+      "repositoryUrl": "https://github.com/tavily-ai/tavily-mcp",
+      "updatedAt": "2026-01-26T21:26:43.076Z",
+      "category": "Developer",
+      "reason": "Supports coding, documentation, infrastructure, or debugging work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=tavily&limit=100",
+        "publisherSourceUrl": "https://github.com/tavily-ai/tavily-mcp",
+        "publisherReadmeUrl": "https://api.github.com/repos/tavily-ai/tavily-mcp/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "tavily-mcp",
+          "version": "0.2.15",
+          "binary": "tavily-mcp",
+          "transport": "stdio",
+          "environmentVariables": [
+            {
+              "name": "TAVILY_API_KEY",
+              "description": "Your Tavily API key from tavily.com",
+              "required": true,
+              "secret": true
+            },
+            {
+              "name": "DEFAULT_PARAMETERS",
+              "description": "JSON string with default search parameters (e.g., {\"include_images\": true, \"max_results\": 15})",
+              "required": false,
+              "secret": false
+            }
+          ],
+          "npmMetadataUrl": "https://registry.npmjs.org/tavily-mcp/0.2.15",
+          "npmMetadataChecked": true,
+          "launchVerified": true,
+          "launchArgs": []
+        }
+      ],
+      "remotes": []
+    },
+    {
+      "id": "io.github.domdomegg/filesystem-mcp",
+      "name": "Filesystem",
+      "description": "Read, create, and edit files.",
+      "version": "1.3.0",
+      "websiteUrl": "https://github.com/domdomegg/filesystem-mcp#readme",
+      "repositoryUrl": "https://github.com/domdomegg/filesystem-mcp.git",
+      "updatedAt": "2026-03-07T23:51:45.706063Z",
+      "category": "Developer",
+      "reason": "Supports coding, documentation, infrastructure, or debugging work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=filesystem&limit=100",
+        "publisherSourceUrl": "https://github.com/domdomegg/filesystem-mcp.git",
+        "publisherReadmeUrl": "https://api.github.com/repos/domdomegg/filesystem-mcp/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "filesystem-mcp",
+          "version": "1.3.0",
+          "binary": "filesystem-mcp",
+          "transport": "stdio",
+          "environmentVariables": [],
+          "npmMetadataUrl": "https://registry.npmjs.org/filesystem-mcp/1.3.0",
+          "npmMetadataChecked": true
+        },
+        {
+          "registryType": "npm",
+          "identifier": "filesystem-mcp",
+          "version": "1.3.0",
+          "binary": "filesystem-mcp",
+          "transport": "streamable-http",
+          "environmentVariables": [
+            {
+              "name": "MCP_TRANSPORT",
+              "description": "Transport type.",
+              "required": true,
+              "secret": false
+            }
+          ],
+          "npmMetadataUrl": "https://registry.npmjs.org/filesystem-mcp/1.3.0",
+          "npmMetadataChecked": true
+        }
+      ],
+      "remotes": []
+    },
+    {
+      "id": "io.github.j0hanz/filesystem-mcp",
+      "name": "Filesystem MCP",
+      "description": "Secure filesystem MCP server for reading, writing, searching, diffing, and patching files.",
+      "version": "2.8.1",
+      "websiteUrl": "https://github.com/j0hanz/filesystem-mcp",
+      "repositoryUrl": "https://github.com/j0hanz/filesystem-mcp",
+      "updatedAt": "2026-10-13T13:00:13.289446Z",
+      "category": "Developer",
+      "reason": "Supports coding, documentation, infrastructure, or debugging work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=filesystem&limit=100",
+        "publisherSourceUrl": "https://github.com/j0hanz/filesystem-mcp",
+        "publisherReadmeUrl": "https://api.github.com/repos/j0hanz/filesystem-mcp/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "@j0hanz/filesystem-mcp",
+          "version": "2.8.1",
+          "binary": "filesystem-mcp",
+          "transport": "stdio",
+          "environmentVariables": [
+            {
+              "name": "FS_ALLOWED_DIRS",
+              "description": "Allowed directories; ':'-separated on Unix, ';'-separated on Windows. Alternative to positional arguments.",
+              "required": false,
+              "secret": false
+            }
+          ],
+          "npmMetadataUrl": "https://registry.npmjs.org/%40j0hanz%2Ffilesystem-mcp/2.8.1",
+          "npmMetadataChecked": true
+        },
+        {
+          "registryType": "oci",
+          "identifier": "ghcr.io/j0hanz/filesystem-mcp:2.8.1",
+          "version": "",
+          "binary": null,
+          "transport": "stdio",
+          "environmentVariables": [
+            {
+              "name": "FS_ALLOWED_DIRS",
+              "description": "Allowed directories inside the container, ':'-separated. Alternative to positional arguments.",
+              "required": false,
+              "secret": false
+            }
+          ],
+          "npmMetadataUrl": null,
+          "npmMetadataChecked": false
+        }
+      ],
+      "remotes": []
+    },
+    {
+      "id": "io.github.Dave-London/pare-docker",
+      "name": "io.github.Dave-London/pare-docker",
+      "description": "Pare Docker ג€” Structured Docker operations (ps, images, logs, build, compose) as typed JSON.",
+      "version": "0.8.1",
+      "websiteUrl": null,
+      "repositoryUrl": "https://github.com/Dave-London/Pare",
+      "updatedAt": "2026-02-14T05:38:56.708184Z",
+      "category": "Developer",
+      "reason": "Supports coding, documentation, infrastructure, or debugging work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?limit=100&search=docker",
+        "publisherSourceUrl": "https://github.com/Dave-London/Pare",
+        "publisherReadmeUrl": "https://api.github.com/repos/Dave-London/Pare/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "@paretools/docker",
+          "version": "0.8.1",
+          "binary": "pare-docker",
+          "transport": "stdio",
+          "environmentVariables": [],
+          "npmMetadataUrl": "https://registry.npmjs.org/%40paretools%2Fdocker/0.8.1",
+          "npmMetadataChecked": true
+        }
+      ],
+      "remotes": []
+    },
+    {
+      "id": "io.github.brawsr/brawsr",
+      "name": "brawsr",
+      "description": "Browser sessions, checkpoints, rewind, fork, lineage, and lifecycle tools for brawsr.",
+      "version": "0.2.0",
+      "websiteUrl": "https://docs.brawsr.io",
+      "repositoryUrl": "https://github.com/brawsr/mcp-server",
+      "updatedAt": "2026-08-11T13:53:54.210055Z",
+      "category": "Developer",
+      "reason": "Supports coding, documentation, infrastructure, or debugging work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=aws&limit=100",
+        "publisherSourceUrl": "https://github.com/brawsr/mcp-server",
+        "publisherReadmeUrl": "https://api.github.com/repos/brawsr/mcp-server/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "@brawsr/mcp-server",
+          "version": "0.2.0",
+          "binary": "brawsr-mcp-server",
+          "transport": "stdio",
+          "environmentVariables": [
+            {
+              "name": "BRAWSR_API_KEY",
+              "description": "API key for the brawsr project used by this MCP server.",
+              "required": true,
+              "secret": true
+            },
+            {
+              "name": "BRAWSR_BASE_URL",
+              "description": "Optional explicit API endpoint override for local development or another deployment.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "BRAWSR_MCP_TIMEOUT_MS",
+              "description": "Optional default lifecycle wait in milliseconds, from 1 through 300000.",
+              "required": false,
+              "secret": false
+            }
+          ],
+          "npmMetadataUrl": "https://registry.npmjs.org/%40brawsr%2Fmcp-server/0.2.0",
+          "npmMetadataChecked": true
+        }
+      ],
+      "remotes": []
+    },
+    {
+      "id": "io.github.mrfentmen/docker-hub-mcp",
+      "name": "io.github.mrfentmen/docker-hub-mcp",
+      "description": "Look up Docker images, tags, and pull counts from Docker Hub. No key required.",
+      "version": "1.0.1",
+      "websiteUrl": null,
+      "repositoryUrl": "https://github.com/mrfentmen/docker-hub-mcp",
+      "updatedAt": "2026-09-21T22:02:50.767069Z",
+      "category": "Developer",
+      "reason": "Supports coding, documentation, infrastructure, or debugging work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?limit=100&search=docker",
+        "publisherSourceUrl": "https://github.com/mrfentmen/docker-hub-mcp",
+        "publisherReadmeUrl": null,
+        "publisherReadmeRetrieved": false,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "docker-hub-mcp",
+          "version": "1.0.1",
+          "binary": "docker-hub-mcp",
+          "transport": "stdio",
+          "environmentVariables": [],
+          "npmMetadataUrl": "https://registry.npmjs.org/docker-hub-mcp/1.0.1",
+          "npmMetadataChecked": true
+        }
+      ],
+      "remotes": []
+    },
+    {
+      "id": "io.github.YawLabs/redis-mcp",
+      "name": "Redis MCP Server",
+      "description": "Read-first Redis MCP: SCAN key explorer, keyspace/TTL/memory/slowlog stats, DBA advisor",
+      "version": "0.5.5",
+      "websiteUrl": "https://yaw.sh/mcp-servers/redis-mcp/",
+      "repositoryUrl": "https://github.com/YawLabs/redis-mcp",
+      "updatedAt": "2026-10-11T15:44:25.034191Z",
+      "category": "Developer",
+      "reason": "Supports coding, documentation, infrastructure, or debugging work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=redis&limit=100",
+        "publisherSourceUrl": "https://github.com/YawLabs/redis-mcp",
+        "publisherReadmeUrl": null,
+        "publisherReadmeRetrieved": false,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "@yawlabs/redis-mcp",
+          "version": "0.5.5",
+          "binary": "redis-mcp",
+          "transport": "stdio",
+          "environmentVariables": [],
+          "npmMetadataUrl": "https://registry.npmjs.org/%40yawlabs%2Fredis-mcp/0.5.5",
+          "npmMetadataChecked": true
+        }
+      ],
+      "remotes": []
+    },
+    {
+      "id": "io.github.upstash/redis-mcp",
+      "name": "io.github.upstash/redis-mcp",
+      "description": "Run Redis commands and look up Upstash Redis Search docs against Upstash Redis over HTTP or TCP.",
+      "version": "0.1.1",
+      "websiteUrl": null,
+      "repositoryUrl": "https://github.com/upstash/redis-mcp",
+      "updatedAt": "2026-07-08T14:32:46.616436Z",
+      "category": "Developer",
+      "reason": "Supports coding, documentation, infrastructure, or debugging work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=redis&limit=100",
+        "publisherSourceUrl": "https://github.com/upstash/redis-mcp",
+        "publisherReadmeUrl": "https://api.github.com/repos/upstash/redis-mcp/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "@upstash/redis-mcp",
+          "version": "0.1.1",
+          "binary": "redis-mcp",
+          "transport": "stdio",
+          "environmentVariables": [
+            {
+              "name": "UPSTASH_REDIS_REST_URL",
+              "description": "Upstash Redis REST URL (HTTP transport).",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "UPSTASH_REDIS_REST_TOKEN",
+              "description": "Upstash Redis REST token (HTTP transport).",
+              "required": false,
+              "secret": true
+            },
+            {
+              "name": "UPSTASH_REDIS_TCP_URL",
+              "description": "Upstash Redis rediss:// connection string (TCP transport).",
+              "required": false,
+              "secret": true
+            }
+          ],
+          "npmMetadataUrl": "https://registry.npmjs.org/%40upstash%2Fredis-mcp/0.1.1",
+          "npmMetadataChecked": true
+        }
+      ],
+      "remotes": []
+    },
+    {
+      "id": "io.github.GLips/Figma-Context-MCP",
+      "name": "io.github.GLips/Figma-Context-MCP",
+      "description": "Give your coding agent access to your Figma data. Implement designs in any framework in one-shot.",
+      "version": "0.13.2",
+      "websiteUrl": null,
+      "repositoryUrl": "https://github.com/GLips/Figma-Context-MCP",
+      "updatedAt": "2026-06-18T16:38:55.772349Z",
+      "category": "Developer",
+      "reason": "Supports coding, documentation, infrastructure, or debugging work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?limit=100&search=figma",
+        "publisherSourceUrl": "https://github.com/GLips/Figma-Context-MCP",
+        "publisherReadmeUrl": "https://api.github.com/repos/GLips/Figma-Context-MCP/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "figma-developer-mcp",
+          "version": "0.13.2",
+          "binary": "figma-developer-mcp",
+          "transport": "stdio",
+          "environmentVariables": [
+            {
+              "name": "FIGMA_API_KEY",
+              "description": "Your Figma Personal Access Token, learn more here: https://www.figma.com/developers/api#access-tokens",
+              "required": true,
+              "secret": true
+            }
+          ],
+          "npmMetadataUrl": "https://registry.npmjs.org/figma-developer-mcp/0.13.2",
+          "npmMetadataChecked": true,
+          "launchVerified": true,
+          "launchArgs": [
+            "--stdio"
+          ]
+        }
+      ],
+      "remotes": []
+    },
+    {
+      "id": "io.github.pipeworx-io/dockerhub",
+      "name": "Dockerhub",
+      "description": "Docker Hub MCP — wraps the Docker Hub v2 API (free, no auth required for public data)",
+      "version": "0.1.2",
+      "websiteUrl": "https://pipeworx.io/packs/dockerhub",
+      "repositoryUrl": "https://github.com/pipeworx-io/mcp-dockerhub",
+      "updatedAt": "2026-09-25T23:36:16.686871Z",
+      "category": "Developer",
+      "reason": "Supports coding, documentation, infrastructure, or debugging work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?limit=100&search=docker",
+        "publisherSourceUrl": "https://github.com/pipeworx-io/mcp-dockerhub",
+        "publisherReadmeUrl": "https://api.github.com/repos/pipeworx-io/mcp-dockerhub/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [],
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://gateway.pipeworx.io/dockerhub/mcp",
+          "headers": []
+        }
+      ]
+    },
+    {
+      "id": "io.github.pipeworx-io/firecrawl",
+      "name": "Firecrawl",
+      "description": "Firecrawl MCP — wraps the Firecrawl API (firecrawl.dev) for web",
+      "version": "0.1.2",
+      "websiteUrl": "https://pipeworx.io/packs/firecrawl",
+      "repositoryUrl": "https://github.com/pipeworx-io/mcp-firecrawl",
+      "updatedAt": "2026-09-26T12:27:56.395728Z",
+      "category": "Developer",
+      "reason": "Supports coding, documentation, infrastructure, or debugging work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=firecrawl&limit=100",
+        "publisherSourceUrl": "https://github.com/pipeworx-io/mcp-firecrawl",
+        "publisherReadmeUrl": null,
+        "publisherReadmeRetrieved": false,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [],
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://gateway.pipeworx.io/firecrawl/mcp",
+          "headers": []
+        }
+      ]
+    },
+    {
+      "id": "io.github.pipeworx-io/brave-search",
+      "name": "Brave Search",
+      "description": "Brave Search MCP — independent web index (no Google/Bing dependency)",
+      "version": "0.1.2",
+      "websiteUrl": "https://pipeworx.io/packs/brave-search",
+      "repositoryUrl": "https://github.com/pipeworx-io/mcp-brave-search",
+      "updatedAt": "2026-09-25T22:15:28.239488Z",
+      "category": "Developer",
+      "reason": "Supports coding, documentation, infrastructure, or debugging work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=brave&limit=100",
+        "publisherSourceUrl": "https://github.com/pipeworx-io/mcp-brave-search",
+        "publisherReadmeUrl": "https://api.github.com/repos/pipeworx-io/mcp-brave-search/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [],
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://gateway.pipeworx.io/brave-search/mcp",
+          "headers": []
+        }
+      ]
+    },
+    {
+      "id": "io.github.pipeworx-io/tavily",
+      "name": "Tavily",
+      "description": "Tavily MCP — wraps the Tavily API (tavily.com)",
+      "version": "0.1.2",
+      "websiteUrl": "https://pipeworx.io/packs/tavily",
+      "repositoryUrl": "https://github.com/pipeworx-io/mcp-tavily",
+      "updatedAt": "2026-09-26T21:50:01.940378Z",
+      "category": "Developer",
+      "reason": "Supports coding, documentation, infrastructure, or debugging work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=tavily&limit=100",
+        "publisherSourceUrl": "https://github.com/pipeworx-io/mcp-tavily",
+        "publisherReadmeUrl": null,
+        "publisherReadmeRetrieved": false,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [],
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://gateway.pipeworx.io/tavily/mcp",
+          "headers": []
+        }
+      ]
+    },
+    {
+      "id": "io.github.pipeworx-io/replicate",
+      "name": "Replicate",
+      "description": "Replicate MCP.",
+      "version": "0.1.2",
+      "websiteUrl": "https://pipeworx.io/packs/replicate",
+      "repositoryUrl": "https://github.com/pipeworx-io/mcp-replicate",
+      "updatedAt": "2026-09-26T21:18:48.699915Z",
+      "category": "Developer",
+      "reason": "Supports coding, documentation, infrastructure, or debugging work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=replicate&limit=100",
+        "publisherSourceUrl": "https://github.com/pipeworx-io/mcp-replicate",
+        "publisherReadmeUrl": null,
+        "publisherReadmeRetrieved": false,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [],
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://gateway.pipeworx.io/replicate/mcp",
+          "headers": []
+        }
+      ]
+    },
+    {
+      "id": "io.github.pipeworx-io/linear",
+      "name": "Linear",
+      "description": "Linear MCP — wraps the Linear GraphQL API (OAuth)",
+      "version": "0.1.2",
+      "websiteUrl": "https://pipeworx.io/packs/linear",
+      "repositoryUrl": "https://github.com/pipeworx-io/mcp-linear",
+      "updatedAt": "2026-09-26T19:29:55.61956Z",
+      "category": "Developer",
+      "reason": "Supports coding, documentation, infrastructure, or debugging work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?limit=100&search=linear",
+        "publisherSourceUrl": "https://github.com/pipeworx-io/mcp-linear",
+        "publisherReadmeUrl": "https://api.github.com/repos/pipeworx-io/mcp-linear/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [],
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://gateway.pipeworx.io/linear/mcp",
+          "headers": []
+        }
+      ]
+    },
+    {
+      "id": "io.github.pipeworx-io/notion_connect",
+      "name": "Notion_connect",
+      "description": "Notion MCP Pack",
+      "version": "0.1.2",
+      "websiteUrl": "https://pipeworx.io/packs/notion_connect",
+      "repositoryUrl": "https://github.com/pipeworx-io/mcp-notion_connect",
+      "updatedAt": "2026-09-26T20:02:36.344459Z",
+      "category": "Developer",
+      "reason": "Supports coding, documentation, infrastructure, or debugging work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?limit=100&search=notion",
+        "publisherSourceUrl": "https://github.com/pipeworx-io/mcp-notion_connect",
+        "publisherReadmeUrl": null,
+        "publisherReadmeRetrieved": false,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [],
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://gateway.pipeworx.io/notion_connect/mcp",
+          "headers": []
+        }
+      ]
+    },
+    {
+      "id": "com.nexaaly/a11y-check",
+      "name": "com.nexaaly/a11y-check",
+      "description": "Real-browser WCAG audit that also finds keyboard-inoperable controls axe-core misses, with fixes.",
+      "version": "1.2.0",
+      "websiteUrl": "https://nexaaly.com/mcp",
+      "repositoryUrl": null,
+      "updatedAt": "2026-07-31T13:09:48.779247Z",
+      "category": "Developer",
+      "reason": "Supports coding, documentation, infrastructure, or debugging work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=exa&limit=100",
+        "publisherSourceUrl": "https://nexaaly.com/mcp",
+        "publisherReadmeUrl": null,
+        "publisherReadmeRetrieved": false,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [],
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://nexaaly.com/mcp",
+          "headers": []
+        }
+      ]
+    },
+    {
+      "id": "com.regsentry/tracking-inspector",
+      "name": "RegSentry Website Tracking Inspector",
+      "description": "Inspect a public site's tracking signals, grade consent evidence, and get remediation playbooks.",
+      "version": "1.0.0",
+      "websiteUrl": "https://regsentry.com/mcp-guide",
+      "repositoryUrl": null,
+      "updatedAt": "2026-09-21T17:34:50.119146Z",
+      "category": "Developer",
+      "reason": "Supports coding, documentation, infrastructure, or debugging work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=sentry&limit=100",
+        "publisherSourceUrl": "https://regsentry.com/mcp-guide",
+        "publisherReadmeUrl": null,
+        "publisherReadmeRetrieved": false,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [],
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://regsentry.com/mcp",
+          "headers": []
+        }
+      ]
+    },
+    {
+      "id": "ai.exa/exa",
+      "name": "ai.exa/exa",
+      "description": "Connect AI agents to Exa for web search, content fetching, and multi-step research.",
+      "version": "3.4.1",
+      "websiteUrl": null,
+      "repositoryUrl": "https://github.com/exa-labs/exa-mcp-server",
+      "updatedAt": "2026-09-23T00:29:56.602357Z",
+      "category": "Developer",
+      "reason": "Supports coding, documentation, infrastructure, or debugging work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=exa&limit=100",
+        "publisherSourceUrl": "https://github.com/exa-labs/exa-mcp-server",
+        "publisherReadmeUrl": "https://api.github.com/repos/exa-labs/exa-mcp-server/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [],
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://mcp.exa.ai/mcp",
+          "headers": [],
+          "setupVerified": true,
+          "setupSourceUrl": "https://github.com/exa-labs/exa-mcp-server"
+        }
+      ]
+    },
+    {
+      "id": "app.linear/linear",
+      "name": "Linear",
+      "description": "MCP server for Linear project management and issue tracking",
+      "version": "1.0.1",
+      "websiteUrl": "https://linear.app",
+      "repositoryUrl": null,
+      "updatedAt": "2026-08-04T09:59:17.029443Z",
+      "category": "Productivity",
+      "reason": "Connects an agent to planning, design, notes, or meetings.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?limit=100&search=linear",
+        "publisherSourceUrl": "https://linear.app",
+        "publisherReadmeUrl": null,
+        "publisherReadmeRetrieved": false,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [],
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://mcp.linear.app/mcp",
+          "headers": []
+        }
+      ]
+    },
+    {
+      "id": "com.notion/mcp",
+      "name": "com.notion/mcp",
+      "description": "Official Notion MCP server",
+      "version": "1.0.1",
+      "websiteUrl": null,
+      "repositoryUrl": null,
+      "updatedAt": "2025-09-11T22:25:50.737872Z",
+      "category": "Productivity",
+      "reason": "Connects an agent to planning, design, notes, or meetings.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?limit=100&search=notion",
+        "publisherSourceUrl": null,
+        "publisherReadmeUrl": null,
+        "publisherReadmeRetrieved": false,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [],
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://mcp.notion.com/mcp",
+          "headers": []
+        },
+        {
+          "type": "sse",
+          "url": "https://mcp.notion.com/sse",
+          "headers": []
+        }
+      ]
+    },
+    {
+      "id": "com.figma.mcp/mcp",
+      "name": "Figma MCP Server",
+      "description": "The Figma MCP server brings Figma design context directly into your AI workflow.",
+      "version": "1.0.3",
+      "websiteUrl": null,
+      "repositoryUrl": "https://github.com/figma/mcp-server-guide",
+      "updatedAt": "2025-10-16T17:40:56.949472Z",
+      "category": "Productivity",
+      "reason": "Connects an agent to planning, design, notes, or meetings.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?limit=100&search=figma",
+        "publisherSourceUrl": "https://github.com/figma/mcp-server-guide",
+        "publisherReadmeUrl": "https://api.github.com/repos/figma/mcp-server-guide/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [],
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://mcp.figma.com/mcp",
+          "headers": [],
+          "setupVerified": true,
+          "setupSourceUrl": "https://github.com/figma/mcp-server-guide"
+        }
+      ]
+    },
+    {
+      "id": "com.atlassian/atlassian-mcp-server",
+      "name": "Atlassian Rovo MCP Server",
+      "description": "Connect to Atlassian Jira, Confluence, Loom, and more to search, create, and manage your work.",
+      "version": "2.0.0",
+      "websiteUrl": "https://support.atlassian.com/atlassian-rovo-mcp-server/docs/getting-started-with-the-atlassian-remote-mcp-server/",
+      "repositoryUrl": "https://github.com/atlassian/atlassian-mcp-server",
+      "updatedAt": "2026-09-09T17:53:32.01107Z",
+      "category": "Productivity",
+      "reason": "Connects an agent to planning, design, notes, or meetings.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?limit=100&search=atlassian",
+        "publisherSourceUrl": "https://github.com/atlassian/atlassian-mcp-server",
+        "publisherReadmeUrl": "https://api.github.com/repos/atlassian/atlassian-mcp-server/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [],
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://mcp.atlassian.com/v2/mcp",
+          "headers": []
+        },
+        {
+          "type": "streamable-http",
+          "url": "https://mcp.atlassian.com/v1/mcp/authv2",
+          "headers": []
+        }
+      ]
+    },
+    {
+      "id": "io.github.awkoy/notion-mcp-server",
+      "name": "io.github.awkoy/notion-mcp-server",
+      "description": "Token-auth Notion MCP: pages, databases, blocks, comments, files. Runs headless in CI and agents.",
+      "version": "3.1.2",
+      "websiteUrl": null,
+      "repositoryUrl": "https://github.com/awkoy/notion-mcp-server",
+      "updatedAt": "2026-10-04T19:16:21.075739Z",
+      "category": "Productivity",
+      "reason": "Connects an agent to planning, design, notes, or meetings.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?limit=100&search=notion",
+        "publisherSourceUrl": "https://github.com/awkoy/notion-mcp-server",
+        "publisherReadmeUrl": null,
+        "publisherReadmeRetrieved": false,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "notion-mcp-server",
+          "version": "3.1.2",
+          "binary": "notion-mcp-server",
+          "transport": "stdio",
+          "environmentVariables": [
+            {
+              "name": "NOTION_TOKEN",
+              "description": "Notion Personal Access Token (ntn_...) or Internal Integration Secret. Create at https://app.notion.com/developers/tokens",
+              "required": true,
+              "secret": true
+            },
+            {
+              "name": "NOTION_PAGE_ID",
+              "description": "Optional default parent page ID used by create_page / create_database when no parent is passed.",
+              "required": false,
+              "secret": false
+            }
+          ],
+          "npmMetadataUrl": "https://registry.npmjs.org/notion-mcp-server/3.1.2",
+          "npmMetadataChecked": true
+        }
+      ],
+      "remotes": []
+    },
+    {
+      "id": "io.github.ai-aviate/better-notion",
+      "name": "io.github.ai-aviate/better-notion",
+      "description": "Operate Notion with a single Markdown document — read, create, and update pages in one call.",
+      "version": "0.3.2",
+      "websiteUrl": null,
+      "repositoryUrl": "https://github.com/ai-aviate/better-mcp-notion",
+      "updatedAt": "2026-02-19T11:56:28.809509Z",
+      "category": "Productivity",
+      "reason": "Connects an agent to planning, design, notes, or meetings.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?limit=100&search=notion",
+        "publisherSourceUrl": "https://github.com/ai-aviate/better-mcp-notion",
+        "publisherReadmeUrl": null,
+        "publisherReadmeRetrieved": false,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "better-mcp-notion",
+          "version": "0.3.2",
+          "binary": "better-mcp-notion",
+          "transport": "stdio",
+          "environmentVariables": [
+            {
+              "name": "NOTION_API_KEY",
+              "description": "Notion API key (starts with ntn_)",
+              "required": true,
+              "secret": true
+            }
+          ],
+          "npmMetadataUrl": "https://registry.npmjs.org/better-mcp-notion/0.3.2",
+          "npmMetadataChecked": true
+        }
+      ],
+      "remotes": []
+    },
+    {
+      "id": "io.github.mrfentmen/linear-mcp",
+      "name": "io.github.mrfentmen/linear-mcp",
+      "description": "Query the Linear GraphQL API: viewer, teams, issue search.",
+      "version": "1.1.0",
+      "websiteUrl": null,
+      "repositoryUrl": "https://github.com/mrfentmen/premium-mcps",
+      "updatedAt": "2026-10-01T21:01:02.01961Z",
+      "category": "Productivity",
+      "reason": "Connects an agent to planning, design, notes, or meetings.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?limit=100&search=linear",
+        "publisherSourceUrl": "https://github.com/mrfentmen/premium-mcps",
+        "publisherReadmeUrl": null,
+        "publisherReadmeRetrieved": false,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "@mrfentmen/linear-mcp",
+          "version": "1.1.0",
+          "binary": "linear-mcp",
+          "transport": "stdio",
+          "environmentVariables": [],
+          "npmMetadataUrl": "https://registry.npmjs.org/%40mrfentmen%2Flinear-mcp/1.1.0",
+          "npmMetadataChecked": true
+        }
+      ],
+      "remotes": []
+    },
+    {
+      "id": "io.github.misterwigglesworth/easy-notion",
+      "name": "io.github.misterwigglesworth/easy-notion",
+      "description": "Markdown-first Notion MCP server. ~6-7x fewer response tokens vs official Notion MCP. 43 tools.",
+      "version": "1.1.0",
+      "websiteUrl": null,
+      "repositoryUrl": "https://github.com/Grey-Iris/easy-notion-mcp",
+      "updatedAt": "2026-08-28T01:39:59.043383Z",
+      "category": "Productivity",
+      "reason": "Connects an agent to planning, design, notes, or meetings.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?limit=100&search=notion",
+        "publisherSourceUrl": "https://github.com/Grey-Iris/easy-notion-mcp",
+        "publisherReadmeUrl": "https://api.github.com/repos/Grey-Iris/easy-notion-mcp/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "easy-notion-mcp",
+          "version": "1.1.0",
+          "binary": null,
+          "transport": "stdio",
+          "environmentVariables": [
+            {
+              "name": "NOTION_TOKEN",
+              "description": "Notion integration token",
+              "required": true,
+              "secret": true
+            },
+            {
+              "name": "NOTION_ROOT_PAGE_ID",
+              "description": "Default parent page ID for create_page (optional — falls back to workspace root in OAuth mode)",
+              "required": false,
+              "secret": false
+            }
+          ],
+          "npmMetadataUrl": "https://registry.npmjs.org/easy-notion-mcp/1.1.0",
+          "npmMetadataChecked": true
+        }
+      ],
+      "remotes": []
+    },
+    {
+      "id": "ai.vexa/vexa",
+      "name": "Vexa",
+      "description": "Meeting bot and transcripts for Google Meet, Teams and Zoom. Live or after, speakers labelled.",
+      "version": "0.12.27",
+      "websiteUrl": "https://docs.vexa.ai/vexa-mcp",
+      "repositoryUrl": "https://github.com/Vexa-ai/vexa",
+      "updatedAt": "2026-09-06T19:12:30.322855Z",
+      "category": "Productivity",
+      "reason": "Connects an agent to planning, design, notes, or meetings.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=exa&limit=100",
+        "publisherSourceUrl": "https://github.com/Vexa-ai/vexa",
+        "publisherReadmeUrl": "https://api.github.com/repos/Vexa-ai/vexa/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [],
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://api.cloud.vexa.ai/mcp",
+          "headers": [
+            {
+              "name": "Authorization",
+              "description": "Bearer <Vexa API key> — from https://vexa.ai/account",
+              "required": true,
+              "secret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "io.usefulapi/linear",
+      "name": "Linear MCP by usefulapi",
+      "description": "Search, read and create Linear issues, projects, teams and cycles.",
+      "version": "1.10.1",
+      "websiteUrl": "https://usefulapi.io/linear/",
+      "repositoryUrl": "https://github.com/m190/usefulapi-mcp",
+      "updatedAt": "2026-10-09T08:38:33.663634Z",
+      "category": "Productivity",
+      "reason": "Connects an agent to planning, design, notes, or meetings.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?limit=100&search=linear",
+        "publisherSourceUrl": "https://github.com/m190/usefulapi-mcp",
+        "publisherReadmeUrl": null,
+        "publisherReadmeRetrieved": false,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [],
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://linear.usefulapi.io/mcp",
+          "headers": []
+        }
+      ]
+    },
+    {
+      "id": "com.stripe/mcp",
+      "name": "com.stripe/mcp",
+      "description": "MCP server integrating with Stripe - tools for customers, products, payments, and more.",
+      "version": "0.2.4",
+      "websiteUrl": null,
+      "repositoryUrl": "https://github.com/stripe/agent-toolkit",
+      "updatedAt": "2025-10-28T22:06:18.495159Z",
+      "category": "Client workflows",
+      "reason": "Supports customer, marketing, research, payment, or delivery work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=stripe&limit=100",
+        "publisherSourceUrl": "https://github.com/stripe/agent-toolkit",
+        "publisherReadmeUrl": "https://api.github.com/repos/stripe/agent-toolkit/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [],
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://mcp.stripe.com",
+          "headers": [],
+          "setupVerified": true,
+          "setupSourceUrl": "https://github.com/stripe/agent-toolkit"
+        }
+      ]
+    },
+    {
+      "id": "io.github.pipeworx-io/hubspot",
+      "name": "Hubspot",
+      "description": "HubSpot MCP Pack",
+      "version": "0.1.2",
+      "websiteUrl": "https://pipeworx.io/packs/hubspot",
+      "repositoryUrl": "https://github.com/pipeworx-io/mcp-hubspot",
+      "updatedAt": "2026-09-26T19:09:01.272032Z",
+      "category": "Client workflows",
+      "reason": "Supports customer, marketing, research, payment, or delivery work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=hubspot&limit=100",
+        "publisherSourceUrl": "https://github.com/pipeworx-io/mcp-hubspot",
+        "publisherReadmeUrl": "https://api.github.com/repos/pipeworx-io/mcp-hubspot/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [],
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://gateway.pipeworx.io/hubspot/mcp",
+          "headers": []
+        }
+      ]
+    },
+    {
+      "id": "io.github.pipeworx-io/stripe_connect",
+      "name": "Stripe_connect",
+      "description": "Stripe MCP Pack — read-only access to Stripe data via API key.",
+      "version": "0.1.2",
+      "websiteUrl": "https://pipeworx.io/packs/stripe_connect",
+      "repositoryUrl": "https://github.com/pipeworx-io/mcp-stripe_connect",
+      "updatedAt": "2026-09-26T21:47:06.786569Z",
+      "category": "Client workflows",
+      "reason": "Supports customer, marketing, research, payment, or delivery work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=stripe&limit=100",
+        "publisherSourceUrl": "https://github.com/pipeworx-io/mcp-stripe_connect",
+        "publisherReadmeUrl": "https://api.github.com/repos/pipeworx-io/mcp-stripe_connect/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [],
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://gateway.pipeworx.io/stripe_connect/mcp",
+          "headers": []
+        }
+      ]
+    },
+    {
+      "id": "com.getmcpads/google-ads",
+      "name": "Google Ads",
+      "description": "Google Ads MCP server: 35 read tools, 10 opt-in preview-first writes.",
+      "version": "2.0.1",
+      "websiteUrl": "https://www.getmcpads.com/tools/google-ads",
+      "repositoryUrl": "https://github.com/get-mcp-ads/google-ads-mcp-server",
+      "updatedAt": "2026-09-23T21:12:49.652129Z",
+      "category": "Client workflows",
+      "reason": "Supports customer, marketing, research, payment, or delivery work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=google&limit=100",
+        "publisherSourceUrl": "https://github.com/get-mcp-ads/google-ads-mcp-server",
+        "publisherReadmeUrl": "https://api.github.com/repos/get-mcp-ads/google-ads-mcp-server/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "@getmcpads/google-ads-mcp-server",
+          "version": "2.0.1",
+          "binary": "google-ads-mcp",
+          "transport": "stdio",
+          "environmentVariables": [
+            {
+              "name": "GOOGLE_ADS_DEVELOPER_TOKEN",
+              "description": "Google Ads API developer token, Basic Access or above.",
+              "required": true,
+              "secret": true
+            },
+            {
+              "name": "GOOGLE_ADS_CLIENT_ID",
+              "description": "OAuth client ID.",
+              "required": true,
+              "secret": false
+            },
+            {
+              "name": "GOOGLE_ADS_CLIENT_SECRET",
+              "description": "OAuth client secret.",
+              "required": true,
+              "secret": true
+            },
+            {
+              "name": "GOOGLE_ADS_REFRESH_TOKEN",
+              "description": "OAuth refresh token.",
+              "required": true,
+              "secret": true
+            },
+            {
+              "name": "GOOGLE_ADS_LOGIN_CUSTOMER_ID",
+              "description": "Manager (MCC) account ID, when the customer sits under one.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "GOOGLE_ADS_ENABLE_WRITES",
+              "description": "Set to 1 to expose 10 write tools. Default calls preview; confirm:true applies changes.",
+              "required": false,
+              "secret": false
+            }
+          ],
+          "npmMetadataUrl": "https://registry.npmjs.org/%40getmcpads%2Fgoogle-ads-mcp-server/2.0.1",
+          "npmMetadataChecked": true
+        }
+      ],
+      "remotes": []
+    },
+    {
+      "id": "com.getmcpads/google-analytics",
+      "name": "Google Analytics 4",
+      "description": "Google Analytics 4 MCP server: 27 read tools.",
+      "version": "2.0.1",
+      "websiteUrl": "https://www.getmcpads.com/tools/ga4",
+      "repositoryUrl": "https://github.com/get-mcp-ads/google-analytics-mcp-server",
+      "updatedAt": "2026-09-23T21:21:14.472277Z",
+      "category": "Client workflows",
+      "reason": "Supports customer, marketing, research, payment, or delivery work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=google&limit=100",
+        "publisherSourceUrl": "https://github.com/get-mcp-ads/google-analytics-mcp-server",
+        "publisherReadmeUrl": "https://api.github.com/repos/get-mcp-ads/google-analytics-mcp-server/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "@getmcpads/google-analytics-mcp-server",
+          "version": "2.0.1",
+          "binary": "google-analytics-mcp",
+          "transport": "stdio",
+          "environmentVariables": [
+            {
+              "name": "GA4_CLIENT_ID",
+              "description": "OAuth client ID.",
+              "required": true,
+              "secret": false
+            },
+            {
+              "name": "GA4_CLIENT_SECRET",
+              "description": "OAuth client secret.",
+              "required": true,
+              "secret": true
+            },
+            {
+              "name": "GA4_REFRESH_TOKEN",
+              "description": "OAuth refresh token, analytics.readonly scope.",
+              "required": true,
+              "secret": true
+            },
+            {
+              "name": "GA4_PROPERTY_ID",
+              "description": "Default GA4 property ID.",
+              "required": false,
+              "secret": false
+            }
+          ],
+          "npmMetadataUrl": "https://registry.npmjs.org/%40getmcpads%2Fgoogle-analytics-mcp-server/2.0.1",
+          "npmMetadataChecked": true
+        }
+      ],
+      "remotes": []
+    },
+    {
+      "id": "com.getmcpads/google-search-console",
+      "name": "Google Search Console",
+      "description": "Google Search Console MCP server: 20 read tools.",
+      "version": "2.0.1",
+      "websiteUrl": "https://www.getmcpads.com/tools/search-console",
+      "repositoryUrl": "https://github.com/get-mcp-ads/google-search-console-mcp-server",
+      "updatedAt": "2026-09-23T21:21:15.116642Z",
+      "category": "Client workflows",
+      "reason": "Supports customer, marketing, research, payment, or delivery work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=google&limit=100",
+        "publisherSourceUrl": "https://github.com/get-mcp-ads/google-search-console-mcp-server",
+        "publisherReadmeUrl": "https://api.github.com/repos/get-mcp-ads/google-search-console-mcp-server/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "@getmcpads/google-search-console-mcp-server",
+          "version": "2.0.1",
+          "binary": "google-search-console-mcp",
+          "transport": "stdio",
+          "environmentVariables": [
+            {
+              "name": "GSC_CLIENT_ID",
+              "description": "OAuth client ID.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "GSC_CLIENT_SECRET",
+              "description": "OAuth client secret.",
+              "required": false,
+              "secret": true
+            },
+            {
+              "name": "GSC_REFRESH_TOKEN",
+              "description": "OAuth refresh token, webmasters.readonly scope.",
+              "required": false,
+              "secret": true
+            },
+            {
+              "name": "GSC_ACCESS_TOKEN",
+              "description": "Short-lived access token, alternative to the three values above.",
+              "required": false,
+              "secret": true
+            },
+            {
+              "name": "GSC_SITE_URL",
+              "description": "Default property, https://example.com/ or sc-domain:example.com.",
+              "required": false,
+              "secret": false
+            }
+          ],
+          "npmMetadataUrl": "https://registry.npmjs.org/%40getmcpads%2Fgoogle-search-console-mcp-server/2.0.1",
+          "npmMetadataChecked": true
+        }
+      ],
+      "remotes": []
+    },
+    {
+      "id": "io.github.mindstone/mcp-server-hubspot",
+      "name": "HubSpot",
+      "description": "HubSpot CRM: contacts, deals, tickets, line items, properties, marketing, files, workflows, threads",
+      "version": "0.4.1",
+      "websiteUrl": null,
+      "repositoryUrl": "https://github.com/mindstone/mcp-servers",
+      "updatedAt": "2026-08-08T12:30:31.232615Z",
+      "category": "Client workflows",
+      "reason": "Supports customer, marketing, research, payment, or delivery work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=hubspot&limit=100",
+        "publisherSourceUrl": "https://github.com/mindstone/mcp-servers",
+        "publisherReadmeUrl": null,
+        "publisherReadmeRetrieved": false,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "@mindstone/mcp-server-hubspot",
+          "version": "0.4.1",
+          "binary": "mcp-server-hubspot",
+          "transport": "stdio",
+          "environmentVariables": [
+            {
+              "name": "HUBSPOT_CONFIG_DIR",
+              "description": "Directory containing accounts.json and credentials/*.token.json",
+              "required": true,
+              "secret": false
+            },
+            {
+              "name": "HUBSPOT_ACCOUNT_EMAIL",
+              "description": "Account selector — one MCP process per HubSpot account",
+              "required": true,
+              "secret": false
+            },
+            {
+              "name": "MCP_WORKSPACE_PATH",
+              "description": "Workspace root for local file tools (required only when invoking upload/attach tools)",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "HUBSPOT_CLIENT_ID",
+              "description": "HubSpot OAuth client ID",
+              "required": true,
+              "secret": false
+            },
+            {
+              "name": "HUBSPOT_CLIENT_SECRET",
+              "description": "HubSpot OAuth client secret",
+              "required": true,
+              "secret": true
+            },
+            {
+              "name": "HUBSPOT_SOURCE_LABEL",
+              "description": "Source attribution label applied to new records",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "HUBSPOT_DISABLE_REFRESH",
+              "description": "Set to 1 to disable token refresh on this surface (use on cloud so desktop remains the sole refresh authority)",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "HUBSPOT_ALLOW_CLOUD_REFRESH",
+              "description": "Set to 1 to allow refresh on the cloud surface even when HUBSPOT_DISABLE_REFRESH=1 (escape hatch)",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "HUBSPOT_REQUEST_TIMEOUT_MS",
+              "description": "Outbound HTTP request timeout in milliseconds (max 300000 = 5 min)",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "HUBSPOT_REFRESH_LOCK_STALE_MS",
+              "description": "Stale-lock detection threshold for the credential refresh mutex (advanced)",
+              "required": false,
+              "secret": false
+            }
+          ],
+          "npmMetadataUrl": "https://registry.npmjs.org/%40mindstone%2Fmcp-server-hubspot/0.4.1",
+          "npmMetadataChecked": true
+        }
+      ],
+      "remotes": []
+    },
+    {
+      "id": "io.github.M-Pineapple/hubspot-auditor",
+      "name": "HubSpot Auditor",
+      "description": "Read-only MCP server that audits a HubSpot portal: what works, what is broken, what is missing.",
+      "version": "1.4.2",
+      "websiteUrl": null,
+      "repositoryUrl": "https://github.com/M-Pineapple/hubspot-auditor",
+      "updatedAt": "2026-10-13T11:24:23.545672Z",
+      "category": "Client workflows",
+      "reason": "Supports customer, marketing, research, payment, or delivery work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=hubspot&limit=100",
+        "publisherSourceUrl": "https://github.com/M-Pineapple/hubspot-auditor",
+        "publisherReadmeUrl": null,
+        "publisherReadmeRetrieved": false,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "hubspot-auditor",
+          "version": "1.4.2",
+          "binary": "hubspot-auditor",
+          "transport": "stdio",
+          "environmentVariables": [
+            {
+              "name": "HUBSPOT_ACCESS_TOKEN",
+              "description": "Read-only HubSpot private app token. Not needed for demo mode.",
+              "required": false,
+              "secret": true
+            }
+          ],
+          "npmMetadataUrl": "https://registry.npmjs.org/hubspot-auditor/1.4.2",
+          "npmMetadataChecked": true
+        }
+      ],
+      "remotes": []
+    },
+    {
+      "id": "io.github.rafaelcg/stripekit",
+      "name": "io.github.rafaelcg/stripekit",
+      "description": "Reconcile a declarative Stripe catalog and inspect your account — plan, push, pull, check.",
+      "version": "0.2.2",
+      "websiteUrl": null,
+      "repositoryUrl": "https://github.com/rafaelcg/stripekit",
+      "updatedAt": "2026-08-07T21:51:15.856516Z",
+      "category": "Client workflows",
+      "reason": "Supports customer, marketing, research, payment, or delivery work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=stripe&limit=100",
+        "publisherSourceUrl": "https://github.com/rafaelcg/stripekit",
+        "publisherReadmeUrl": "https://api.github.com/repos/rafaelcg/stripekit/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "stripekit",
+          "version": "0.2.2",
+          "binary": "stripekit",
+          "transport": "stdio",
+          "environmentVariables": [],
+          "npmMetadataUrl": "https://registry.npmjs.org/stripekit/0.2.2",
+          "npmMetadataChecked": true
+        }
+      ],
+      "remotes": []
+    },
+    {
+      "id": "ai.adplane/google-ads",
+      "name": "adplane",
+      "description": "Google, Meta, Microsoft and TikTok Ads in Claude or ChatGPT: reports and changes, created paused.",
+      "version": "1.31.0",
+      "websiteUrl": "https://adplane.ai",
+      "repositoryUrl": null,
+      "updatedAt": "2026-10-09T18:22:28.787277Z",
+      "category": "Client workflows",
+      "reason": "Supports customer, marketing, research, payment, or delivery work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=google&limit=100",
+        "publisherSourceUrl": "https://adplane.ai",
+        "publisherReadmeUrl": null,
+        "publisherReadmeRetrieved": false,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [],
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://mcp.adplane.ai",
+          "headers": []
+        }
+      ]
+    },
+    {
+      "id": "ai.trendsapi/google-trends",
+      "name": "Google Trends API",
+      "description": "Google Trends search interest over time with growth metrics. Free key at trendsapi.ai",
+      "version": "1.0.1",
+      "websiteUrl": "https://trendsapi.ai/trends/google-trends",
+      "repositoryUrl": "https://github.com/trendsapi-ai/google-trends-api",
+      "updatedAt": "2026-08-18T15:26:56.863452Z",
+      "category": "Client workflows",
+      "reason": "Supports customer, marketing, research, payment, or delivery work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=google&limit=100",
+        "publisherSourceUrl": "https://github.com/trendsapi-ai/google-trends-api",
+        "publisherReadmeUrl": "https://api.github.com/repos/trendsapi-ai/google-trends-api/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [],
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://google-trends.api.trendsapi.ai/mcp",
+          "headers": [
+            {
+              "name": "Authorization",
+              "description": "Bearer token. Get your free API key at https://trendsapi.ai",
+              "required": true,
+              "secret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.exactpdf/mcp",
+      "name": "ExactPDF",
+      "description": "ExactPDF local stdio MCP client: hosted API PDF merge, split, compress, Markdown source packs.",
+      "version": "0.2.19",
+      "websiteUrl": "https://exactpdf.com/docs/api",
+      "repositoryUrl": "https://github.com/smmallya/ExactPDF",
+      "updatedAt": "2026-10-02T06:43:33.860654Z",
+      "category": "Client workflows",
+      "reason": "Supports customer, marketing, research, payment, or delivery work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=exa&limit=100",
+        "publisherSourceUrl": "https://github.com/smmallya/ExactPDF",
+        "publisherReadmeUrl": null,
+        "publisherReadmeRetrieved": false,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "@exactpdf/mcp",
+          "version": "0.2.19",
+          "binary": "exactpdf-mcp",
+          "transport": "stdio",
+          "environmentVariables": [
+            {
+              "name": "EXACTPDF_API_KEY",
+              "description": "API key for hosted ExactPDF API processing. Optional to start the local server and use setup guidance; required for hosted PDF workflows.",
+              "required": false,
+              "secret": true
+            }
+          ],
+          "npmMetadataUrl": "https://registry.npmjs.org/%40exactpdf%2Fmcp/0.2.19",
+          "npmMetadataChecked": true
+        }
+      ],
+      "remotes": []
+    },
+    {
+      "id": "io.github.WeAreBraveLabs/domain-checker-mcp",
+      "name": "io.github.WeAreBraveLabs/domain-checker-mcp",
+      "description": "Fast domain availability checker. DNS + RDAP/WHOIS verification.",
+      "version": "1.0.1",
+      "websiteUrl": null,
+      "repositoryUrl": "https://github.com/WeAreBraveLabs/domain-checker-mcp",
+      "updatedAt": "2026-01-22T12:04:09.089539Z",
+      "category": "Client workflows",
+      "reason": "Supports customer, marketing, research, payment, or delivery work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=brave&limit=100",
+        "publisherSourceUrl": "https://github.com/WeAreBraveLabs/domain-checker-mcp",
+        "publisherReadmeUrl": "https://api.github.com/repos/WeAreBraveLabs/domain-checker-mcp/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "@wearebravelabs/domain-checker-mcp",
+          "version": "1.0.1",
+          "binary": "domain-checker-mcp",
+          "transport": "stdio",
+          "environmentVariables": [],
+          "npmMetadataUrl": "https://registry.npmjs.org/%40wearebravelabs%2Fdomain-checker-mcp/1.0.1",
+          "npmMetadataChecked": true
+        }
+      ],
+      "remotes": []
+    },
+    {
+      "id": "com.pulsemcp/vercel",
+      "name": "com.pulsemcp/vercel",
+      "description": "MCP server for Vercel — manage deployments and view build and runtime application logs.",
+      "version": "0.1.3",
+      "websiteUrl": null,
+      "repositoryUrl": "https://github.com/pulsemcp/mcp-servers",
+      "updatedAt": "2026-06-14T17:30:16.282977Z",
+      "category": "Client workflows",
+      "reason": "Supports customer, marketing, research, payment, or delivery work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?limit=100&search=vercel",
+        "publisherSourceUrl": "https://github.com/pulsemcp/mcp-servers",
+        "publisherReadmeUrl": "https://api.github.com/repos/pulsemcp/mcp-servers/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "vercel-platform-mcp-server",
+          "version": "0.1.3",
+          "binary": "vercel-platform-mcp-server",
+          "transport": "stdio",
+          "environmentVariables": [
+            {
+              "name": "VERCEL_TOKEN",
+              "description": "Vercel API token for authentication.",
+              "required": true,
+              "secret": true
+            },
+            {
+              "name": "VERCEL_TEAM_ID",
+              "description": "Team ID for team-scoped operations.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "VERCEL_TEAM_SLUG",
+              "description": "Team URL slug for team-scoped operations.",
+              "required": false,
+              "secret": false
+            },
+            {
+              "name": "VERCEL_ENABLED_TOOLGROUPS",
+              "description": "Comma-separated list of tool groups to enable (readonly, readwrite).",
+              "required": false,
+              "secret": false
+            }
+          ],
+          "npmMetadataUrl": "https://registry.npmjs.org/vercel-platform-mcp-server/0.1.3",
+          "npmMetadataChecked": true
+        }
+      ],
+      "remotes": []
+    },
+    {
+      "id": "io.github.sena-labs/replicate-mcp-server",
+      "name": "io.github.sena-labs/replicate-mcp-server",
+      "description": "Replicate MCP server - image, video, audio, speech, LLM, vision, upscale, 3D, training. 36 tools.",
+      "version": "3.2.3",
+      "websiteUrl": null,
+      "repositoryUrl": "https://github.com/sena-labs/replicate-mcp-server",
+      "updatedAt": "2026-06-27T13:07:35.602478Z",
+      "category": "Client workflows",
+      "reason": "Supports customer, marketing, research, payment, or delivery work.",
+      "provenance": {
+        "registryUrl": "https://registry.modelcontextprotocol.io/v0.1/servers?search=replicate&limit=100",
+        "publisherSourceUrl": "https://github.com/sena-labs/replicate-mcp-server",
+        "publisherReadmeUrl": "https://api.github.com/repos/sena-labs/replicate-mcp-server/readme",
+        "publisherReadmeRetrieved": true,
+        "scope": "Latest active Registry record transcribed. npm binary checked against the exact package version when marked. Publisher README retrieval is recorded separately. Setup is verified only for marked launch commands; connection, install, package health, and security are untested."
+      },
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "replicate-mcp-server",
+          "version": "3.2.3",
+          "binary": "replicate-mcp-server",
+          "transport": "stdio",
+          "environmentVariables": [],
+          "npmMetadataUrl": "https://registry.npmjs.org/replicate-mcp-server/3.2.3",
+          "npmMetadataChecked": true
+        }
+      ],
+      "remotes": []
+    }
+  ]
+}
